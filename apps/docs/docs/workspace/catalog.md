@@ -26,17 +26,19 @@ Matching is on whole or partial words and ignores capitals, so `grünfläche` fi
 
 ### Filters
 
-The sidebar narrows the list by:
+The sidebar narrows the list, in this order:
 
-- **Data type**: feature, table, raster or bundle
-- **Geometry**: point, line or polygon
-- **Data Category**: the dataset's theme: environment, landuse, places, transportation, people, boundary, basemap or other
+- **Show my favourites**: only the datasets you have starred
+- **Location**: `Set spatial filter` restricts the catalog to datasets covering an area, described in one of [three ways](#spatial-filter)
+- **Data Category**: the dataset's theme, such as transportation, environment, people, land use or hazards. The sidebar shows every category the catalog currently holds
+- **Data type**: whether the dataset is a feature layer, a table, a raster or a bundle
+- **Geometry**: the kind of shape its features have
 - **Publisher**: who distributes the dataset
-- **Licence**: the terms it is published under
+- **License**: the terms it is published under
 - **Language**: the language of its metadata
 - **Period**: a `From` and `To` date, to find data covering a particular time
 
-Each option shows how many datasets carry it, and the counts update as you narrow. Selected filters appear as chips above the results, so you can remove one without reopening the sidebar, and `Clear` removes them all.
+Each section lists the values the catalog actually holds, commonest first, with a count beside each. The counts update as you narrow, so a value that no longer matches anything disappears. Selected filters appear as chips above the results, so you can remove one without reopening the sidebar, and `Clear` removes them all.
 
 ### Filtering by location {#spatial-filter}
 
@@ -54,20 +56,18 @@ Sort by **Relevance**, **Last updated**, or title **A–Z** / **Z–A**, and swi
 
 ### Saving datasets you use often
 
-The star on a dataset card saves it. `Show my favourites` then narrows the catalog to what you have saved. Saved datasets persist across sessions and are shared with the `+ Add layer` picker inside projects.
+The <img src={require('/img/icons/star.png').default} alt="Star" style={{ maxHeight: "16px", maxWidth: "16px", verticalAlign: "middle"}}/> on a dataset card saves it. `Show my favourites` then narrows the catalog to what you have saved. Saved datasets persist across sessions and are shared with the `+ Add layer` picker inside projects.
 
 ## What a dataset page shows
 
-Click a dataset to open it. The **Summary** tab shows:
+Click a dataset to open it. The **Summary** tab carries the publisher's description, and beside it a panel of what they recorded about the dataset:
 
-- **Description** of the dataset's content and scope
-- **Type**, **Geometry type**, **Data Category**, **Language** and **Region**
-- **License**, with `View license at source` where the publisher links to the terms
-- **Data Reference Year** and when the dataset was **Last updated**
-- **Key words** the publisher tagged it with
-- **Publisher**, with contact details where they are available
-
-Where a dataset has data to show, a **Data** tab holds a **Data sample** of its rows and a **Columns** list naming every column and its type. The sample is capped, so it is a look at the data rather than the whole of it.
+- **Type**, and **Geometry type** for a feature dataset. A bundle shows how many layers it holds.
+- **Data Category**
+- **License**, with a link to the terms at the source where the publisher gives one
+- When the data is from. This reads **Data Reference Year** for a single year and **Period** for a span, depending on the dataset.
+- **Last updated**
+- **Publisher**, with contact details and a link to their own metadata where those exist
 
 A dataset made of several layers is marked `Bundle` and lists **Layers in this bundle**; opening one shows which bundle it belongs to. See [Dataset Types](../data/dataset_types.md#datasets-made-of-several-layers) for what that means.
 
@@ -100,7 +100,7 @@ Datasets are added to a project from inside that project, so the `+ Add layer` d
 The first time a catalog dataset is added, GOAT prepares a copy of it for your project. The layer shows `Preparing data …` while that runs and becomes available when it finishes.
 
 :::info Catalog layers are read-only
-A layer added from the catalog is marked `Catalog · read-only`. You can style, filter and analyse it like any other layer, but its rows and columns cannot be edited, and it cannot be downloaded directly. The licence and the source stay with the publisher.
+A layer added from the catalog is marked `Catalog · read-only`. You can style, filter, analyse and download it like any other layer, but its rows and columns cannot be edited, because the data belongs to the publisher and stays as they released it.
 :::
 
 When a newer version of a dataset is published, a layer already in your project shows `Update available in the catalog`, so you can decide whether to bring in the new data.
@@ -111,42 +111,33 @@ After adding the layer, you can apply [Filters](../map/filter.md "Filter dataset
 
 ## What the catalog holds
 
-The catalog covers several thematic areas. These are some of the main ones.
+The catalog brings together two kinds of data: open data harvested from public portals, and datasets Plan4Better prepares itself.
 
-### Points of Interest (POIs)
-**Strategic locations of amenities, facilities, and attractions essential for accessibility planning and urban analysis**, such as Public transport stops and stations, Shopping centers and retail locations, Tourism and leisure facilities, Food and beverage establishments, Healthcare facilities and hospitals, Educational institutions and schools.
+### Open data from public portals
 
-*Data Sources:* [Overture Maps Foundation](https://overturemaps.org/), [OpenStreetMap (OSM)](https://wiki.openstreetmap.org/), government departments, health insurance providers, and retail companies. Additional field data collection conducted when necessary.
+Public administrations publish large amounts of geodata in open data portals. Using it normally means knowing which portal to look in, reading its metadata, downloading a file and converting it before any analysis can begin. GOAT harvests these portals so the data is ready to use. Among others, it comes from:
 
-### Population and Buildings
-**Detailed demographic data disaggregated to building and local levels**, enhanced with land-use information for improved accuracy. We provide Building-level population data for German districts and municipalities, local population data from German Census 2022, and European NUTS-3 level population statistics (Nomenclature of Territorial Units for Statistics).
+- [GovData](https://www.govdata.de/)
+- [data.gv.at](https://www.data.gv.at/)
+- [geocat.ch](https://www.geocat.ch/)
+- [data.europa.eu](https://data.europa.eu/)
 
-*Data Sources:* [German Census 2022](https://ergebnisse.zensus2022.de/datenbank/online/), individual municipalities and districts, and 3D City Models from German federal states.
+These portals carry far more than spatial planning needs, including budget tables, legal texts and historic maps. An AI-assisted pipeline therefore reads each published dataset and selects the ones that answer a planning question. Only those are downloaded, converted and published to the catalog.
 
-### Administrative Boundaries
-**Comprehensive boundary datasets defining governmental and administrative jurisdictions at multiple scales**, such as Municipal boundaries, District boundaries, Federal state boundaries, and Postal code regions.
+### Plan4Better datasets
 
-*Data Sources:* [Federal Agency for Cartography and Geodesy (BKG)](https://www.bkg.bund.de/) and [OpenStreetMap (OSM)](https://wiki.openstreetmap.org/).
+Alongside the harvested portals, the catalog holds datasets Plan4Better prepares and maintains. Points of interest are built from OpenStreetMap through a pipeline that regroups the raw tags into planning categories and corrects them. Public transport stops, stations and lines are derived from the GTFS feeds of transport operators, covering local, regional and long-distance services.
 
 ## Data quality and maintenance
 
-Plan4Better ensures the reliability and currency of catalog data through comprehensive data management processes:
+**Source selection.** We harvest official open data portals and other public initiatives.
 
-### Data collection and preparation
+**Relevance selection.** An AI-assisted pipeline reads each published dataset and keeps only the ones that answer a planning question.
 
-Our data collection process follows rigorous standards to ensure quality and reliability:
+**Format standardisation.** Various formats such as Shapefile and GeoJSON are converted to consistent schemas.
 
-- **Source identification** - We prioritize official open data portals and publicly available initiatives
-- **Format standardization** - Various formats (shapefiles, GeoJSON, etc.) are converted to consistent schemas
-- **Data integration** - Multiple datasets are combined and adapted to local contexts through fusion workflows
-- **Quality validation** - Comprehensive validation processes ensure accuracy and reliability
-- **Continuous expansion** - We actively seek and integrate additional datasets based on user needs
+:::info What we do not change
+The values themselves are not cleaned, completed or corrected. Harvested data reaches you exactly as its publisher released it, so its accuracy and completeness are the publisher's. Datasets Plan4Better prepares follow our own quality standards, and those can be reviewed on request.
+:::
 
-### Update schedule
-
-To maintain data currency and relevance:
-
-- **Annual updates** - All datasets are refreshed at least once per year
-- **Dynamic data** - Rapidly changing data (POIs, public transport) receives more frequent updates
-- **On-demand updates** - Critical datasets can be updated as needed based on user requirements
-
+**Continuous expansion.** We actively seek and integrate additional datasets based on user needs, and critical datasets can be updated or added on request.
