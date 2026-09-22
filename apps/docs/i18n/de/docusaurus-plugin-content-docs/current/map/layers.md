@@ -172,7 +172,7 @@ Layer-Gruppen ermöglichen es Ihnen:
 Durch Klicken auf das <code>weitere Optionen</code> <img src={require('/img/icons/3dots.png').default} alt="Optionen" style={{ maxHeight: "20px", maxWidth: "20px", objectFit: "cover"}}/> Symbol haben Sie weitere Optionen zur <strong>Verwaltung und Organisation</strong> des ausgewählten Layers.
 
 <div style={{ display: 'flex', justifyContent: 'center' }}>
-<img src={require('/img/map/layers/layer_options_de.webp').default} alt="Layer-Optionen" style={{ maxHeight: "250px", maxWidth: "250px", objectFit: "cover", alignItems: 'center'}}/>
+<img src={require('/img/map/layers/layer_options_de.webp').default} alt="Layer-Optionen" style={{ maxHeight: "auto", maxWidth: "420px", objectFit: "cover", alignItems: 'center'}}/>
 </div>
 
 <p></p>
