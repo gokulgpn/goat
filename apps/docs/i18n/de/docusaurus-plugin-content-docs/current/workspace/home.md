@@ -26,8 +26,8 @@ Mit den Pfeiltasten wechseln Sie zwischen den Treffern, mit `Enter` öffnen Sie 
 
 Unter dem Suchfeld stehen drei Schaltflächen:
 
-- `Neues Projekt`: ein Projekt anlegen, wahlweise aus einer Vorlage
-- `Datensatz hinzufügen`: einen Datensatz hochladen oder eine externe Quelle verbinden
+- `Neues Projekt`: ein leeres Projekt beginnen oder ein aus GOAT exportiertes importieren
+- `Datensatz hinzufügen`: eine Datei von Ihrem Gerät hochladen (GeoPackage, GeoJSON, Shapefile, KML, CSV, XLSX, Parquet) oder eine externe Quelle per URL verbinden (WFS, WMS, WMTS, XYZ-Kacheln oder COG)
 - `Katalog durchsuchen`: den [Katalog](../workspace/catalog.md) öffnen, um fertige Daten zu finden
 
 ## Weitermachen
@@ -37,6 +37,18 @@ Ihre zuletzt geöffneten Projekte, die neuesten zuerst. Jedes zeigt, wann Sie zu
 ## Mit einer Vorlage starten
 
 Mit Vorlagen beginnen Sie mit einem bereits eingerichteten Projekt, Workflow, Dashboard oder Layout. Filtern Sie die Reihe nach Art (`Workflow`, `Dashboard` oder `Layout`) und danach, woher die Vorlage stammt: `Alle`, `GOAT`, `Meine`, `Team` oder `Organisation`. Über `Alle Vorlagen` gelangen Sie zur vollständigen Übersicht.
+
+## Aktuelle Datensätze
+
+Die Datensätze, mit denen Sie zuletzt gearbeitet haben, jeweils mit Besitzer und Bereich. Über `Alle Datensätze` gelangen Sie zur Seite [Inhalt](../workspace/content.md).
+
+## Ihre Teams
+
+Die Teams, denen Sie angehören, als direkter Weg in den jeweiligen Team-Bereich, ohne den Umweg über Inhalt.
+
+## Aus unserem Blog
+
+Aktuelle Beiträge von Plan4Better, darunter die Release Notes zu dem, was gerade veröffentlicht wurde.
 
 ## Erste Schritte
 

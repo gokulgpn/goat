@@ -33,6 +33,7 @@ Sie können Layer aus [verschiedenen Quellen](../data/dataset_types) zu Ihrer Ka
 
 - **Meine Datensätze**: alles, was bereits in Ihren Bereichen liegt
 - **Katalog**: fertige Datensätze von offiziellen Anbietern
+- **Externe Quelle**: ein Layer, der über WFS, WMS, WMTS, XYZ-Kacheln oder COG bereitgestellt wird, per URL eingebunden
 
 <div class="step">
   <div class="step-number">1</div>
@@ -97,6 +98,34 @@ Sie können Layer aus [verschiedenen Quellen](../data/dataset_types) zu Ihrer Ka
   <div class="step-number">4</div>
   <div class="content">Wählen Sie einen oder mehrere Datensätze aus und klicken Sie auf <code>Zum Projekt hinzufügen</code>. GOAT bereitet eine Kopie für Ihr Projekt vor; der Layer zeigt währenddessen <code>Daten werden vorbereitet …</code>.</div>
 </div>
+
+  </TabItem>
+  <TabItem value="External" label="Externe Quelle" className="tabItemBox">
+
+<div class="step">
+  <div class="step-number">3</div>
+  <div class="content">Geben Sie die <code>URL</code> des Dienstes ein und folgen Sie den Schritten für die Art der Quelle, die Sie einbinden.</div>
+</div>
+
+<Tabs>
+  <TabItem value="WFS" label="WFS" default className="tabItemBox">
+    <div class="step">
+      <div class="content"><p>Für einen WFS-Layer benötigen Sie einen <strong>GetCapabilities</strong>-Link.</p>Anschließend wählen Sie den gewünschten Layer. <strong>Es lässt sich jeweils nur ein Layer hinzufügen.</strong></div>
+    </div>
+  </TabItem>
+
+  <TabItem value="WMS" label="WMS" className="tabItemBox">
+    <div class="step">
+      <div class="content"><p>Auch ein WMS-Layer benötigt einen <strong>GetCapabilities</strong>-Link.</p>Hier können Sie mehrere Layer auswählen, GOAT <strong>führt sie jedoch zu einem zusammen</strong>.</div>
+    </div>
+  </TabItem>
+
+  <TabItem value="WMTS" label="WMTS" className="tabItemBox">
+    <div class="step">
+      <div class="content"><p>Ein WMTS lässt sich über eine <strong>direkte URL</strong> oder einen <strong>GetCapabilities</strong>-Link einbinden. Enthält die URL mehrere Layer, kann jeweils nur einer hinzugefügt werden.</p>Die Projektion muss <strong>Web Mercator (EPSG:3857)</strong> und GoogleMaps-kompatibel sein. Andernfalls unterscheiden sich die Zoomstufen, und die Quelle erscheint nicht in der Liste.</div>
+    </div>
+  </TabItem>
+</Tabs>
 
   </TabItem>
 </Tabs>

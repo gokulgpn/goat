@@ -19,21 +19,17 @@ Auf der Seite Inhalt können Sie:
 
 ## Bereiche
 
-Die linke Leiste zeigt die Bereiche, auf die Sie zugreifen können:
+Es gibt drei Arten von Bereichen:
 
-- **Meine Inhalte**: Ihr persönlicher Bereich. Was Sie erstellen, landet hier, sofern Sie es nicht woanders ablegen.
-- **Team-Bereiche**: einer je Team, dem Sie angehören. Alle im Team können auf die Inhalte zugreifen.
-- **Organisation**: für die gesamte Organisation freigegeben.
+- **Meine Inhalte** gehören Ihnen. Was Sie erstellen, landet hier, sofern Sie es nicht woanders ablegen.
+- **Team-Bereiche**, einer je Team, dem Sie angehören. Alle im Team können auf die Inhalte zugreifen.
+- **Organisation**, freigegeben für alle in Ihrer Organisation.
 
-Darunter stehen drei Ansichten, die alle Bereiche zusammenfassen:
+Drei weitere Ansichten durchsuchen alle Bereiche zugleich, sodass Sie nicht wissen müssen, wo etwas liegt: **Mit mir geteilt** für alles, wozu andere Ihnen Zugriff gegeben haben, **Zuletzt bearbeitet** für das, was Sie zuletzt geöffnet haben, und **Papierkorb** für Gelöschtes, das sich noch zurückholen lässt.
 
-- **Mit mir geteilt**: alles, was andere mit Ihnen geteilt haben, an einer Stelle
-- **Zuletzt bearbeitet**: was Sie zuletzt geöffnet haben, über alle erreichbaren Bereiche hinweg
-- **Papierkorb**: gelöschte Inhalte, bis sie endgültig entfernt werden
+Wenn Sie einen Bereich öffnen, sehen Sie seine Inhalte nach Art gruppiert: **Ordner**, **Projekte**, **Vorlagen** und **Datensätze**. Jede Gruppe zeigt eine Anzahl und lässt sich einklappen, eine leere Gruppe wird weggelassen, und mit `Mehr laden` holen Sie den Rest einer langen Gruppe.
 
-Wählen Sie einen Bereich, um seine Inhalte zu sehen. Sie sind nach Art gruppiert: **Ordner**, **Verknüpfungen**, **Projekte**, **Vorlagen** und **Datensätze**. Jede Gruppe zeigt eine Anzahl und lässt sich einklappen, eine leere Gruppe wird weggelassen, und mit `Mehr laden` holen Sie den Rest einer langen Gruppe.
-
-Eine **Verknüpfung** verweist auf Inhalte, die in einem anderen Bereich liegen; das Element selbst bleibt dort, wo sein Besitzer es aufbewahrt. Die Kachel nennt den Bereich.
+Eine fünfte Gruppe, **Verknüpfungen**, erscheint erst, wenn etwas aus dem Bereich übertragen wurde. Siehe [Teilen und Übertragen](#teilen-und-übertragen-sind-zweierlei).
 
 ## Sich zurechtfinden
 
@@ -64,6 +60,8 @@ Wählen Sie ein Element aus, oder mehrere, um damit zu arbeiten. Das Menü auf e
 
 **Rechte übertragen** verschiebt das Element dauerhaft in den Bereich einer anderen Person. Das ist der richtige Weg, wenn ein Projekt tatsächlich den Besitzer wechselt, etwa bei einer Übergabe vor dem Wechsel aus einem Team.
 
+Im Ursprungsbereich bleibt eine **Verknüpfung** zurück, als solche gekennzeichnet und mit dem echten Namen des Elements. Sie ist ein Verweis: Ein Klick darauf führt Sie zum Element an seinem neuen Ort.
+
 :::info Wer was sehen kann
 Ein Element zeigt seine **Sichtbarkeit**: privat, mit einzelnen Personen geteilt, mit einem Team oder der Organisation geteilt, oder öffentlich. Ordner und Datenpakete können mit Teams und der Organisation geteilt werden.
 :::
@@ -78,7 +76,7 @@ Gelöschte Inhalte verschwinden nicht sofort: Sie landen im **Papierkorb**, aus 
 
 - **Neuer Ordner**, um Inhalte so zu gruppieren, wie es Ihnen passt
 - **Leeres Projekt** oder **Projekt importieren**
-- **Datensatz**, um Daten von Ihrem Gerät hochzuladen
+- **Datensatz**, um eine Datei von Ihrem Gerät hochzuladen (GeoPackage, GeoJSON, Shapefile, KML, CSV, XLSX, Parquet sowie GTFS- und Overture-Archive) oder eine externe Quelle per URL zu verbinden (WFS, WMS, WMTS, XYZ-Kacheln oder COG)
 - **Dokument hochladen**, für eine Datei, die zur Arbeit gehört, ohne selbst Daten zu sein
 
 Ein Projekt lässt sich auch von der Startseite aus beginnen.
@@ -173,6 +171,42 @@ GOAT unterstützt mehrere Dateiformate zum Hochladen: **GeoPackage**, **GeoJSON*
 <div class="step">
   <div class="step-number">6</div>
   <div class="content">Überprüfen Sie Ihre Konfiguration im Schritt <strong>Bestätigung</strong> und klicken Sie auf <code>Hochladen</code>, um den Datensatz zu Ihrem Workspace hinzuzufügen.</div>
+</div>
+
+### Eine externe Quelle verbinden
+
+Statt eine Datei hochzuladen, können Sie GOAT auf einen Dienst verweisen, der die Daten bereits veröffentlicht: **Web Feature Service (WFS)**, **Web Map Service (WMS)**, **Web Map Tile Service (WMTS)**, **XYZ-Kacheln** oder ein **Cloud Optimized GeoTIFF (COG)**.
+
+<div class="step">
+  <div class="step-number">1</div>
+  <div class="content">Öffnen Sie über die Seitenleiste die Seite <code>Inhalt</code>.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">2</div>
+  <div class="content">Klicken Sie auf <code>Neu</code> und wählen Sie <code>Datensatz</code>, dann die Option für eine externe Quelle.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">3</div>
+  <div class="content">Geben Sie die URL des Dienstes ein.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">4</div>
+  <div class="content">Wählen Sie aus den angebotenen Layern den gewünschten aus und klicken Sie auf <code>Weiter</code>.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">5</div>
+  <div class="content">
+  <p>Geben Sie dem Datensatz einen Namen, wählen Sie den Ordner, in dem er liegen soll, und ergänzen Sie bei Bedarf eine Beschreibung.</p>
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-number">6</div>
+  <div class="content">Prüfen Sie die Angaben und klicken Sie auf <code>Speichern</code>.</div>
 </div>
 
 ### Einen Datensatz herunterladen

@@ -26,8 +26,8 @@ Move through the results with the arrow keys, open one with `Enter`, and close t
 
 Three buttons sit under the search box:
 
-- `New Project`: create a project, optionally from a template
-- `Add Dataset`: upload a dataset or connect an external source
+- `New Project`: start a blank project, or import one exported from GOAT
+- `Add Dataset`: upload a file from your device (GeoPackage, GeoJSON, Shapefile, KML, CSV, XLSX, Parquet), or connect an external source by URL (WFS, WMS, WMTS, XYZ Tiles or COG)
 - `Browse catalog`: open the [Catalog](../workspace/catalog.md) to find ready-made data
 
 ## Jump back in
@@ -37,6 +37,18 @@ Your most recently opened projects, newest first, each showing when you last wor
 ## Start from a template
 
 Templates let you begin with a project, workflow, dashboard or layout that is already set up. Filter the row by kind (`Workflow`, `Dashboard` or `Layout`) and by who the template came from: `Everyone`, `GOAT`, `Mine`, `Team` or `Organization`. Click `All templates` to browse the full shelf.
+
+## Recent Datasets
+
+The datasets you last worked with, each showing who owns it and which space it sits in. `All datasets` opens the [Content](../workspace/content.md) page.
+
+## Your teams
+
+The teams you belong to, as a way into each team's space without going through Content first.
+
+## From our blog
+
+Recent posts from Plan4Better, including release notes for what has just shipped.
 
 ## Getting started
 

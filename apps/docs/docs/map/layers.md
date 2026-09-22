@@ -36,6 +36,7 @@ You can add layers from [different sources](../data/dataset_types) to your map:
 
 - **My datasets**: anything already in your spaces
 - **Catalog**: ready-made datasets from official providers
+- **External source**: a layer served by WFS, WMS, WMTS, XYZ Tiles or COG, added by URL
 
 <div class="step">
   <div class="step-number">1</div>
@@ -100,6 +101,34 @@ You can add layers from [different sources](../data/dataset_types) to your map:
   <div class="step-number">4</div>
   <div class="content">Select one or more datasets and click <code>Add to project</code>. GOAT prepares a copy for your project; the layer reads <code>Preparing data …</code> while that runs.</div>
 </div>
+
+  </TabItem>
+  <TabItem value="External" label="External source" className="tabItemBox">
+
+<div class="step">
+  <div class="step-number">3</div>
+  <div class="content">Enter the <code>URL</code> of the service, then follow the steps for the kind of source you are adding.</div>
+</div>
+
+<Tabs>
+  <TabItem value="WFS" label="WFS" default className="tabItemBox">
+    <div class="step">
+      <div class="content"><p>A WFS layer needs a <strong>GetCapabilities</strong> link.</p>You then choose which layer to add. <strong>Only one layer can be added at a time.</strong></div>
+    </div>
+  </TabItem>
+
+  <TabItem value="WMS" label="WMS" className="tabItemBox">
+    <div class="step">
+      <div class="content"><p>A WMS layer also needs a <strong>GetCapabilities</strong> link.</p>You can select several layers here, but GOAT <strong>merges them into one</strong>.</div>
+    </div>
+  </TabItem>
+
+  <TabItem value="WMTS" label="WMTS" className="tabItemBox">
+    <div class="step">
+      <div class="content"><p>A WMTS can be added by <strong>direct URL</strong> or <strong>GetCapabilities</strong> link. If the URL carries more than one layer, only one can be added at a time.</p>The projection must be <strong>Web Mercator (EPSG:3857)</strong> and GoogleMaps compatible. Zoom levels differ otherwise, so a source that does not meet both will not appear in the list.</div>
+    </div>
+  </TabItem>
+</Tabs>
 
   </TabItem>
 </Tabs>

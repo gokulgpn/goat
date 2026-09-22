@@ -19,21 +19,17 @@ From the Content page you can:
 
 ## Spaces
 
-The panel on the left lists the spaces you can reach:
+You can reach three kinds of space:
 
-- **My Content**: your personal space. Content you create lands here unless you put it somewhere else.
-- **Team spaces**: one per team you belong to. Everyone in the team can reach what the space holds.
-- **Organization**: shared across your whole organisation.
+- **My Content** is yours. What you create lands here unless you put it somewhere else.
+- **Team spaces**, one per team you belong to. Everyone in the team can reach what the space holds.
+- **Organization**, shared across everyone in your organisation.
 
-Below the spaces are three views that cut across all of them:
+Three further views search across all of them at once, which saves knowing where something lives: **Shared with me** for anything other people have given you access to, **Recent** for what you opened lately, and **Trash** for what you deleted but can still get back.
 
-- **Shared with me**: everything other people have shared with you, gathered in one place
-- **Recent**: what you have opened lately, across every space you can reach
-- **Trash**: content you deleted, until it is purged
+Opening a space shows what it holds, grouped by kind: **Folders**, **Projects**, **Templates** and **Datasets**. Each group carries a count and can be collapsed, a group with nothing in it is left out, and `Load more` fetches the rest of a long one.
 
-Selecting a space shows what it holds, grouped by kind: **Folders**, **Shortcuts**, **Projects**, **Templates** and **Datasets**. Each group carries a count and can be collapsed, a group with nothing in it is left out, and `Load more` fetches the rest of a long one.
-
-A **shortcut** points at content that lives in another space, so the thing itself stays where its owner keeps it. The tile says which space that is.
+A fifth group, **Shortcuts**, appears only once something has been transferred out of the space. See [Sharing and transferring](#sharing-and-transferring-are-different).
 
 ## Finding your way around
 
@@ -64,6 +60,8 @@ Select an item, or several, to act on them. The kebab menu on a card and the act
 
 **Transferring ownership** moves the item into someone else's space for good. Reach for it when a project genuinely changes hands, for example when you hand a piece of work over before leaving a team.
 
+A transfer leaves a **shortcut** behind in the space the item came from, badged as such and carrying the item's real name. It is a pointer, so opening it takes you to the item where it now lives.
+
 :::info Who can see what
 An item shows its **audience**: private, shared with named people, shared with a team or organisation, or public. Folders and bundles can be shared with teams and the organisation.
 :::
@@ -78,7 +76,7 @@ Deleting content does not remove it straight away: it goes to the **Trash**, whe
 
 - **New Folder**, to group content however suits you
 - **Blank project** or **Import project**
-- **Dataset**, to upload data from your device
+- **Dataset**, to upload a file from your device (GeoPackage, GeoJSON, Shapefile, KML, CSV, XLSX, Parquet, and GTFS or Overture archives) or connect an external source by URL (WFS, WMS, WMTS, XYZ Tiles or COG)
 - **Upload Document**, for a file that belongs with the work without being data
 
 A project can also be started from the Home page.
@@ -173,6 +171,42 @@ GOAT supports multiple file formats for upload: **GeoPackage**, **GeoJSON**, **S
 <div class="step">
   <div class="step-number">6</div>
   <div class="content">Review your configuration in the <strong>Confirmation</strong> step and click <code>Upload</code> to add the dataset to your workspace.</div>
+</div>
+
+### Connecting to an external source
+
+Rather than uploading a file, you can point GOAT at a service that already publishes the data: **Web Feature Service (WFS)**, **Web Map Service (WMS)**, **Web Map Tile Service (WMTS)**, **XYZ Tiles** or a **Cloud Optimized GeoTIFF (COG)**.
+
+<div class="step">
+  <div class="step-number">1</div>
+  <div class="content">Open the <code>Content</code> page from the sidebar.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">2</div>
+  <div class="content">Click <code>Add new</code> and select <code>Dataset</code>, then choose the external-source option.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">3</div>
+  <div class="content">Enter the URL of the service.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">4</div>
+  <div class="content">Pick the layer you want from the ones the service offers, and click <code>Next</code>.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">5</div>
+  <div class="content">
+  <p>Give the dataset a name, choose the folder it should live in, and add a description if you want one.</p>
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-number">6</div>
+  <div class="content">Check the details and click <code>Save</code>.</div>
 </div>
 
 ### Downloading a dataset

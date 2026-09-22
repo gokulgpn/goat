@@ -114,3 +114,10 @@ base_networks/*
 .ds-sync/
 ds-bundle/
 .design-sync
+
+# AI tooling - never commit
+.claude/
+.codex
+
+# Internal writing references, not published with the docs
+apps/docs/writing/
