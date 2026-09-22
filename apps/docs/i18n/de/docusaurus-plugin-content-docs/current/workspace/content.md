@@ -31,7 +31,9 @@ Darunter stehen drei Ansichten, die alle Bereiche zusammenfassen:
 - **Zuletzt bearbeitet**: was Sie zuletzt geöffnet haben, über alle erreichbaren Bereiche hinweg
 - **Papierkorb**: gelöschte Inhalte, bis sie endgültig entfernt werden
 
-Wählen Sie einen Bereich, um seine Inhalte zu sehen. Innerhalb eines Bereichs gruppieren **Ordner** die Inhalte so, wie es Ihnen passt.
+Wählen Sie einen Bereich, um seine Inhalte zu sehen. Sie sind nach Art gruppiert: **Ordner**, **Verknüpfungen**, **Projekte**, **Vorlagen** und **Datensätze**. Jede Gruppe zeigt eine Anzahl und lässt sich einklappen, eine leere Gruppe wird weggelassen, und mit `Mehr laden` holen Sie den Rest einer langen Gruppe.
+
+Eine **Verknüpfung** verweist auf Inhalte, die in einem anderen Bereich liegen; das Element selbst bleibt dort, wo sein Besitzer es aufbewahrt. Die Kachel nennt den Bereich.
 
 ## Sich zurechtfinden
 
@@ -72,60 +74,58 @@ Gelöschte Inhalte verschwinden nicht sofort: Sie landen im **Papierkorb**, aus 
 
 ## Inhalte hinzufügen
 
-Über `Neu` auf der Seite Inhalt legen Sie ein Projekt an, laden einen Datensatz hoch oder erstellen einen Ordner. Ein Projekt lässt sich auch von der Startseite aus beginnen.
+`Neu` auf der Seite Inhalt bietet:
+
+- **Neuer Ordner**, um Inhalte so zu gruppieren, wie es Ihnen passt
+- **Leeres Projekt** oder **Projekt importieren**
+- **Datensatz**, um Daten von Ihrem Gerät hochzuladen
+- **Dokument hochladen**, für eine Datei, die zur Arbeit gehört, ohne selbst Daten zu sein
+
+Ein Projekt lässt sich auch von der Startseite aus beginnen.
 
 ### Ein Projekt erstellen
 
-Folgen Sie diesen einfachen Schritten, um ein neues **Projekt** zu erstellen:
-
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Öffnen Sie über die Seitenleiste die Seite <code>Inhalt</code>.</div>
+  <div class="content">Öffnen Sie über die Seitenleiste die Seite <code>Inhalt</code> und wechseln Sie in den Ordner, in dem das Projekt liegen soll.</div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Klicken Sie auf die <code>Neu</code>-Schaltfläche in der oberen rechten Ecke.</div>
+  <div class="content">Klicken Sie auf <code>Neu</code> und wählen Sie <code>Leeres Projekt</code>.</div>
 </div>
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">
-  <p>Füllen Sie die erforderlichen Informationen aus:</p>
-    <ul>
-      <li><strong>Projekt-Titel</strong> - Geben Sie Ihrem Projekt einen beschreibenden Namen</li>
-      <li><strong>Projekt-Ordner</strong> - Wählen Sie einen Ordner aus oder erstellen Sie einen, um Ihr Projekt zu organisieren</li>
-      <li><strong>Beschreibung</strong> (optional) - Fügen Sie Details zum Zweck Ihres Projekts hinzu</li>
-    </ul>
-  </div>
-</div>
-
-<div class="step">
-  <div class="step-number">4</div>
-  <div class="content">Überprüfen Sie Ihre Informationen und klicken Sie auf die <code>Erstellen</code>-Schaltfläche, um Ihr neues Projekt zu finalisieren.</div>
+  <div class="content">Geben Sie dem Projekt einen Namen und klicken Sie auf <code>Projekt erstellen</code>. Es wird in dem Ordner angelegt, den Sie gerade geöffnet haben, und öffnet sich direkt.</div>
 </div>
 
 ### Ein Projekt importieren
 
-Sie können eine zuvor exportierte GOAT-Projektdatei importieren:
+Sie können ein Projekt importieren, das aus GOAT als `.zip`-Datei exportiert wurde.
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Klicken Sie auf die <code>Neu</code>-Schaltfläche in der oberen rechten Ecke.</div>
+  <div class="content">Klicken Sie auf <code>Neu</code> und wählen Sie <code>Projekt importieren</code>.</div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Wählen Sie <code>Importieren</code>, um eine vorhandene Projektdatei hochzuladen.</div>
+  <div class="content">Wählen Sie die <code>.zip</code>-Datei aus.</div>
 </div>
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Wählen Sie einen <strong>Projekt-Ordner</strong> und klicken Sie auf <code>Importieren</code>, um den Vorgang abzuschließen.</div>
+  <div class="content">Geben Sie bei Bedarf einen <code>Projektnamen</code> ein, oder lassen Sie das Feld leer, um den exportierten Namen beizubehalten. Wählen Sie unter <code>Ziel</code> den Bereich und den <code>Ordner</code>.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">4</div>
+  <div class="content">Klicken Sie auf <code>Importieren</code>. Der Import läuft im Hintergrund; den Fortschritt sehen Sie im Job-Menü.</div>
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/workspace/projects/project_import_de.webp').default} alt="Ein Projekt in GOAT importieren" style={{ maxHeight: "auto", maxWidth: "100%", objectFit: "cover"}}/>
+  <img src={require('/img/workspace/projects/project_import.webp').default} alt="Ein Projekt in GOAT importieren" style={{ maxHeight: "auto", maxWidth: "100%", objectFit: "cover"}}/>
 </div>
 
 ### Einen Datensatz hochladen
@@ -139,7 +139,7 @@ GOAT unterstützt mehrere Dateiformate zum Hochladen: **GeoPackage**, **GeoJSON*
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Klicken Sie auf <code>Neu</code> und wählen Sie <code>Datensatz hochladen</code>.</div>
+  <div class="content">Klicken Sie auf <code>Neu</code> und wählen Sie <code>Datensatz</code>.</div>
 </div>
 
 <div class="step">
@@ -175,55 +175,6 @@ GOAT unterstützt mehrere Dateiformate zum Hochladen: **GeoPackage**, **GeoJSON*
   <div class="content">Überprüfen Sie Ihre Konfiguration im Schritt <strong>Bestätigung</strong> und klicken Sie auf <code>Hochladen</code>, um den Datensatz zu Ihrem Workspace hinzuzufügen.</div>
 </div>
 
-### Eine externe Quelle verbinden
-
-Verbinden Sie sich mit externen Datendiensten einschließlich **Web Feature Service (WFS)**, **Web Map Service (WMS)**, **Web Map Tile Service (WMTS)**, **XYZ-Kacheln** und **Cloud Optimized GeoTIFF (COG)**.
-
-<div class="step">
-  <div class="step-number">1</div>
-  <div class="content">Öffnen Sie über die Seitenleiste die Seite <code>Inhalt</code>.</div>
-</div>
-
-<div class="step">
-  <div class="step-number">2</div>
-  <div class="content">Klicken Sie auf <code>Neu</code> und wählen Sie <code>Externer Datensatz</code>.</div>
-</div>
-
-<div class="step">
-  <div class="step-number">3</div>
-  <div class="content">Geben Sie die URL des externen Datendienstes ein.</div>
-</div>
-
-<div class="step">
-  <div class="step-number">4</div>
-  <div class="content">Wählen Sie den spezifischen Layer aus, den Sie hinzufügen möchten, aus den verfügbaren Optionen und klicken Sie auf <code>Weiter</code>.</div>
-</div>
-
-<div class="step">
-  <div class="step-number">5</div>
-  <div class="content">
-  <p>Konfigurieren Sie Ihren Datensatz:</p>
-    <ul>
-      <li><strong>Zielordner</strong> - Wählen Sie, wo Sie Ihren Datensatz organisieren möchten</li>
-      <li><strong>Name</strong> - Geben Sie Ihrem Datensatz einen beschreibenden Namen</li>
-      <li><strong>Beschreibung</strong> (optional) - Fügen Sie Details über die externe Datenquelle hinzu</li>
-    </ul>
-  </div>
-</div>
-
-<div class="step">
-  <div class="step-number">6</div>
-  <div class="content">Überprüfen Sie Ihre Konfiguration und klicken Sie auf <code>Speichern</code>, um den externen Datensatz hinzuzufügen.</div>
-</div>
-
-:::tip Alternative Upload-Methode
-Sie können Datensätze auch direkt während der Arbeit in der [Karte](../map/layers) Oberfläche hochladen für die sofortige Verwendung in Ihren Projekten.
-:::
-
-
-
-## Mit einem Datensatz arbeiten
-
 ### Einen Datensatz herunterladen
 
 Beim Herunterladen eines räumlichen Datensatzes können Sie im Dialog Folgendes auswählen:
@@ -232,18 +183,12 @@ Beim Herunterladen eines räumlichen Datensatzes können Sie im Dialog Folgendes
 - **Koordinatenreferenzsystem**: das KRS, in das die Daten vor dem Download umprojiziert werden. GOAT schlägt automatisch KRS-Optionen basierend auf der geografischen Ausdehnung des Datensatzes vor: Globale Optionen (WGS 84, Web Mercator) sind immer verfügbar, zusätzlich die passende UTM-Zone sowie relevante nationale oder regionale KRS. Der Standardwert ist **WGS 84 (EPSG:4326)**.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/workspace/datasets/managing_datasets.png').default} alt="Datensatz-Verwaltungsoptionen" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
+  <img src={require('/img/workspace/datasets/managing_datasets_de.webp').default} alt="Datensatz-Verwaltungsoptionen" style={{ maxHeight: "auto", maxWidth: "100%"}}/>
 </div>
 
 ### Datensatz-Metadaten und Vorschau
 
-Zeigen Sie detaillierte Informationen über Ihre Datensätze an, um deren Inhalt und Struktur besser zu verstehen. Klicken Sie direkt auf den Datensatz-Namen, um die Metadaten-Ansicht zu öffnen.
-
-Die Metadaten-Ansicht bietet:
-
-- <code>Zusammenfassung</code> - Übersicht über Datensatz-Eigenschaften und Statistiken
-- <code>Daten</code> - Detaillierte Ansicht aller Datenfelder und Werte
-- <code>Karte</code> - Räumliche Visualisierung mit interaktiver Legende
+Klicken Sie auf den Namen eines Datensatzes, um ihn zu öffnen. Der Reiter `Zusammenfassung` beschreibt ihn und führt auf, was der Datengeber hinterlegt hat. Wenn der Datensatz Zeilen zum Anzeigen hat, enthält ein Reiter `Daten` eine Auswahl davon sowie die Spalten und ihre Typen.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/datasets/metadata.gif').default} alt="Metadaten der Datensätze im Workspace von GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>

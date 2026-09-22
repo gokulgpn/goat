@@ -44,11 +44,17 @@ Each section lists the values the catalog actually holds, commonest first, with 
 
 `Set spatial filter` narrows the catalog to datasets covering an area you care about. There are three ways to describe it:
 
-- **Region**: search for a country, state or district by name
+- **Region**: search for a country, state or district by name. Several can be combined, and a dataset covering any of them matches.
 - **Point + buffer**: click the map to place a point, then set a radius around it
 - **Polygon**: click the map to draw the corners of an area
 
 Results are ranked by how much of each dataset falls inside your area, so the datasets that cover it best come first.
+
+:::tip Search a region in its own language
+Regions come from Eurostat's [NUTS classification](https://ec.europa.eu/eurostat/web/nuts), which names each one as the country itself does. `Germany` finds nothing; `Deutschland` does. The same goes for `Italia` rather than Italy and `München` rather than Munich.
+
+Type the first few letters and pick from the suggestions, which is usually quicker than knowing the name in advance. Eurostat also publishes the full [correspondence tables](https://ec.europa.eu/eurostat/web/nuts/correspondence-tables) if you want to look a region up.
+:::
 
 ### Sorting and views
 

@@ -12,7 +12,15 @@ Nach der Anmeldung bei GOAT landen Sie auf der Startseite, **dem Ausgangspunkt, 
 
 ## Suche
 
-Die Suche findet Projekte, Datensätze und Vorlagen in allen Bereichen, auf die Sie zugreifen können. Mit `⌘K` (oder `Strg+K`) öffnen Sie sie von überall aus, ohne zur Maus zu greifen.
+Die Suche durchsucht alle Bereiche, auf die Sie zugreifen können. Mit `⌘K` oder `Strg+K` öffnen Sie sie von überall aus, ohne zur Maus zu greifen.
+
+Tippen Sie einfach los, und es wird alles zugleich durchsucht. Zum Einschränken beginnen Sie mit einem von drei Präfixen:
+
+- `project:` durchsucht nur Projekte
+- `dataset:` durchsucht nur Ihre Datensätze
+- `catalog:` durchsucht den öffentlichen [Katalog](../workspace/catalog.md)
+
+Mit den Pfeiltasten wechseln Sie zwischen den Treffern, mit `Enter` öffnen Sie einen, mit `Esc` schließen Sie die Suche.
 
 ## Etwas Neues beginnen
 

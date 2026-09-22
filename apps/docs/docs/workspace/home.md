@@ -12,7 +12,15 @@ When you log in to GOAT you arrive at the Home page, **the starting point for fi
 
 ## Search
 
-The search box finds projects, datasets and templates across every space you can reach. Press `⌘K` (or `Ctrl+K`) to open it from anywhere without reaching for the mouse.
+The search box looks across every space you can reach. Press `⌘K`, or `Ctrl+K`, to open it from anywhere without reaching for the mouse.
+
+Start typing and it searches everything at once. To narrow it, begin with one of three prefixes:
+
+- `project:` searches only projects
+- `dataset:` searches only your datasets
+- `catalog:` searches the public [Catalog](../workspace/catalog.md)
+
+Move through the results with the arrow keys, open one with `Enter`, and close the search with `Esc`.
 
 ## Starting something new
 

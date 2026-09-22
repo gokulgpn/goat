@@ -44,11 +44,17 @@ Jeder Abschnitt zeigt die Werte, die der Katalog tatsächlich enthält, die häu
 
 `Räumlichen Filter setzen` schränkt den Katalog auf Datensätze ein, die ein bestimmtes Gebiet abdecken. Dafür gibt es drei Wege:
 
-- **Region**: nach Land, Bundesland oder Bezirk suchen
+- **Region**: nach Land, Bundesland oder Bezirk suchen. Mehrere lassen sich kombinieren; ein Datensatz passt, sobald er eine davon abdeckt.
 - **Punkt + Umkreis**: auf die Karte klicken, um einen Punkt zu setzen, dann einen Radius festlegen
 - **Polygon**: auf die Karte klicken, um die Eckpunkte eines Gebiets zu zeichnen
 
 Die Ergebnisse werden danach sortiert, wie viel eines Datensatzes in Ihrem Gebiet liegt. Datensätze, die es am besten abdecken, stehen oben.
+
+:::tip Regionen in ihrer eigenen Sprache suchen
+Die Regionen stammen aus der [NUTS-Klassifikation](https://ec.europa.eu/eurostat/web/nuts) von Eurostat, die jede Region so benennt, wie das Land selbst es tut. `Germany` findet nichts, `Deutschland` schon. Ebenso `Italia` statt Italien und `München` statt Munich.
+
+Tippen Sie die ersten Buchstaben und wählen Sie aus den Vorschlägen; das geht meist schneller, als den Namen vorher zu kennen. Eurostat veröffentlicht außerdem die vollständigen [Korrespondenztabellen](https://ec.europa.eu/eurostat/web/nuts/correspondence-tables), falls Sie eine Region nachschlagen möchten.
+:::
 
 ### Sortierung und Ansichten
 

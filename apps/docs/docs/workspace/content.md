@@ -31,7 +31,9 @@ Below the spaces are three views that cut across all of them:
 - **Recent**: what you have opened lately, across every space you can reach
 - **Trash**: content you deleted, until it is purged
 
-Selecting a space shows what it holds. Within a space, **Folders** group content however suits you.
+Selecting a space shows what it holds, grouped by kind: **Folders**, **Shortcuts**, **Projects**, **Templates** and **Datasets**. Each group carries a count and can be collapsed, a group with nothing in it is left out, and `Load more` fetches the rest of a long one.
+
+A **shortcut** points at content that lives in another space, so the thing itself stays where its owner keeps it. The tile says which space that is.
 
 ## Finding your way around
 
@@ -72,56 +74,54 @@ Deleting content does not remove it straight away: it goes to the **Trash**, whe
 
 ## Adding content
 
-Use `Add new` on the Content page to create a project, upload a dataset or add a folder. A project can also be started from the Home page.
+`Add new` on the Content page offers:
+
+- **New Folder**, to group content however suits you
+- **Blank project** or **Import project**
+- **Dataset**, to upload data from your device
+- **Upload Document**, for a file that belongs with the work without being data
+
+A project can also be started from the Home page.
 
 ### Creating a project
 
-Follow these simple steps to create a new project:
-
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Open the <code>Content</code> page from the sidebar.</div>
+  <div class="content">Open the <code>Content</code> page from the sidebar, and go to the folder you want the project to live in.</div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Click <code>Add new</code> and choose a project option.</div>
+  <div class="content">Click <code>Add new</code> and select <code>Blank project</code>.</div>
 </div>
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">
-  <p>Fill in the required information:</p>
-    <ul>
-      <li><strong>Project Title</strong> - Give your project a descriptive name</li>
-      <li><strong>Project Folder</strong> - Choose or create a folder to organize your project</li>
-      <li><strong>Description</strong> (optional) - Add details about your project's purpose</li>
-    </ul>
-  </div>
-</div>
-
-<div class="step">
-  <div class="step-number">4</div>
-  <div class="content">Review your information and click the <code>Create</code> button to finalize your new project.</div>
+  <div class="content">Give the project a name and click <code>Create project</code>. It is created in the folder you were browsing, and opens straight away.</div>
 </div>
 
 ### Importing a project
 
-You can import a previously exported GOAT project file:
+You can import a project that was exported from GOAT as a `.zip` file.
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Click <code>Add new</code> and choose a project option.</div>
+  <div class="content">Click <code>Add new</code> and select <code>Import project</code>.</div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Select <code>Import</code> to upload an existing project file.</div>
+  <div class="content">Choose the <code>.zip</code> file.</div>
 </div>
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Choose a <strong>Project Folder</strong> and click <code>Import</code> to finish.</div>
+  <div class="content">Give it a <code>Project Name</code> if you want one, or leave the field empty to keep the name it was exported under. Pick the <code>Destination</code> space and <code>Folder</code>.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">4</div>
+  <div class="content">Click <code>Import</code>. The import runs in the background, so follow its progress in the jobs menu.</div>
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -175,55 +175,6 @@ GOAT supports multiple file formats for upload: **GeoPackage**, **GeoJSON**, **S
   <div class="content">Review your configuration in the <strong>Confirmation</strong> step and click <code>Upload</code> to add the dataset to your workspace.</div>
 </div>
 
-### Connecting to an external source
-
-Connect to external data services including **Web Feature Service (WFS)**, **Web Map Service (WMS)**, **Web Map Tile Service (WMTS)**, **XYZ Tiles**, and **Cloud Optimized GeoTIFF (COG)**.
-
-<div class="step">
-  <div class="step-number">1</div>
-  <div class="content">Open the <code>Content</code> page from the sidebar.</div>
-</div>
-
-<div class="step">
-  <div class="step-number">2</div>
-  <div class="content">Click <code>Add new</code> and select <code>Dataset</code>, then choose the external-source option.</div>
-</div>
-
-<div class="step">
-  <div class="step-number">3</div>
-  <div class="content">Enter the URL of the external data service.</div>
-</div>
-
-<div class="step">
-  <div class="step-number">4</div>
-  <div class="content">Select the specific layer you want to add from the available options and click <code>Next</code>.</div>
-</div>
-
-<div class="step">
-  <div class="step-number">5</div>
-  <div class="content">
-  <p>Configure your dataset:</p>
-    <ul>
-      <li><strong>Destination Folder</strong> - Choose where to organize your dataset</li>
-      <li><strong>Name</strong> - Give your dataset a descriptive name</li>
-      <li><strong>Description</strong> (optional) - Add details about the external data source</li>
-    </ul>
-  </div>
-</div>
-
-<div class="step">
-  <div class="step-number">6</div>
-  <div class="content">Review your configuration and click <code>Save</code> to add the external dataset.</div>
-</div>
-
-:::tip Alternative Upload Method
-You can also upload datasets directly while working in the [Map](../map/layers) interface for immediate use in your projects.
-:::
-
-
-
-## Working with a dataset
-
 ### Downloading a dataset
 
 When downloading a spatial dataset, a dialog lets you choose:
@@ -233,18 +184,12 @@ When downloading a spatial dataset, a dialog lets you choose:
 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/workspace/datasets/managing_datasets.png').default} alt="Dataset management options" style={{ maxHeight: "auto", maxWidth: "80%"}}/>
+  <img src={require('/img/workspace/datasets/managing_datasets.webp').default} alt="Dataset management options" style={{ maxHeight: "auto", maxWidth: "100%"}}/>
 </div>
 
 ### Dataset metadata and preview
 
-View detailed information about your datasets to better understand their content and structure. Access metadata by clicking directly on the dataset name.
-
-The metadata view provides:
-
-- <code>Summary</code> - Overview of dataset properties and statistics
-- <code>Data</code> - Detailed view of all data fields and values  
-- <code>Map</code> - Spatial visualization with interactive legend
+Click a dataset's name to open it. The `Summary` tab describes it and lists what the publisher recorded, and where the dataset has rows to show, a `Data` tab holds a sample of them alongside the columns and their types.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/datasets/metadata.gif').default} alt="Metadata of the datasets in Workspace of GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
