@@ -16,7 +16,7 @@ The Data Catalog is your gateway to exploring Plan4Better's comprehensive collec
 
 ## Finding a dataset
 
-Open the **Catalog** from the sidebar, or reach it from `+ Add layer` inside a project. The page lists every dataset in the catalog. Search, filters and sorting all narrow that list, and copying the page link shares the result — whoever opens it sees the same datasets you did.
+Open the **Catalog** from the sidebar, or reach it from `+ Add layer` inside a project. The page lists every dataset in the catalog. Search, filters and sorting all narrow that list, and copying the page link shares the result. Whoever opens it sees the same datasets you did.
 
 ### Search
 
@@ -28,13 +28,13 @@ Matching is on whole or partial words and ignores capitals, so `grünfläche` fi
 
 The sidebar narrows the list by:
 
-- **Data type** — feature, table, raster or bundle
-- **Geometry** — point, line or polygon
-- **Data Category** — the dataset's theme: environment, landuse, places, transportation, people, boundary, basemap or other
-- **Publisher** — who distributes the dataset
-- **Licence** — the terms it is published under
-- **Language** — the language of its metadata
-- **Period** — a `From` and `To` date, to find data covering a particular time
+- **Data type**: feature, table, raster or bundle
+- **Geometry**: point, line or polygon
+- **Data Category**: the dataset's theme: environment, landuse, places, transportation, people, boundary, basemap or other
+- **Publisher**: who distributes the dataset
+- **Licence**: the terms it is published under
+- **Language**: the language of its metadata
+- **Period**: a `From` and `To` date, to find data covering a particular time
 
 Each option shows how many datasets carry it, and the counts update as you narrow. Selected filters appear as chips above the results, so you can remove one without reopening the sidebar, and `Clear` removes them all.
 
@@ -42,9 +42,9 @@ Each option shows how many datasets carry it, and the counts update as you narro
 
 `Set spatial filter` narrows the catalog to datasets covering an area you care about. There are three ways to describe it:
 
-- **Region** — search for a country, state or district by name
-- **Point + buffer** — click the map to place a point, then set a radius around it
-- **Polygon** — click the map to draw the corners of an area
+- **Region**: search for a country, state or district by name
+- **Point + buffer**: click the map to place a point, then set a radius around it
+- **Polygon**: click the map to draw the corners of an area
 
 Results are ranked by how much of each dataset falls inside your area, so the datasets that cover it best come first.
 
@@ -100,7 +100,7 @@ Datasets are added to a project from inside that project, so the `+ Add layer` d
 The first time a catalog dataset is added, GOAT prepares a copy of it for your project. The layer shows `Preparing data …` while that runs and becomes available when it finishes.
 
 :::info Catalog layers are read-only
-A layer added from the catalog is marked `Catalog · read-only`. You can style, filter and analyse it like any other layer, but its rows and columns cannot be edited, and it cannot be downloaded directly — the licence and the source stay with the publisher.
+A layer added from the catalog is marked `Catalog · read-only`. You can style, filter and analyse it like any other layer, but its rows and columns cannot be edited, and it cannot be downloaded directly. The licence and the source stay with the publisher.
 :::
 
 When a newer version of a dataset is published, a layer already in your project shows `Update available in the catalog`, so you can decide whether to bring in the new data.

@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Content
 
-The **Content** page is where your projects, datasets and templates live. Everything you can reach is organised into **spaces** — your own, your teams', and your organisation's — so content belongs to a space rather than to you personally, and stays where it is when people join or leave.
+The **Content** page is where your projects, datasets and templates live. Everything you can reach is organised into **spaces**: your own, your teams', and your organisation's. Content belongs to a space rather than to you personally, so it stays where it is when people join or leave.
 
 From the Content page you can:
 
@@ -21,15 +21,15 @@ From the Content page you can:
 
 The panel on the left lists the spaces you can reach:
 
-- **My Content** — your personal space. Content you create lands here unless you put it somewhere else.
-- **Team spaces** — one per team you belong to. Everyone in the team can reach what the space holds.
-- **Organization** — shared across your whole organisation.
+- **My Content**: your personal space. Content you create lands here unless you put it somewhere else.
+- **Team spaces**: one per team you belong to. Everyone in the team can reach what the space holds.
+- **Organization**: shared across your whole organisation.
 
 Below the spaces are three views that cut across all of them:
 
-- **Shared with me** — everything other people have shared with you, gathered in one place
-- **Recent** — what you have opened lately, across every space you can reach
-- **Trash** — content you deleted, until it is purged
+- **Shared with me**: everything other people have shared with you, gathered in one place
+- **Recent**: what you have opened lately, across every space you can reach
+- **Trash**: content you deleted, until it is purged
 
 Selecting a space shows what it holds. Within a space, **Folders** group content however suits you.
 
@@ -46,7 +46,7 @@ The toolbar above the content offers:
 
 ## Managing content
 
-Select an item — or several — to act on them. The kebab menu on a card and the action bar offer:
+Select an item, or several, to act on them. The kebab menu on a card and the action bar offer:
 
 | Action | What it does |
 |--------|--------------|
@@ -58,12 +58,12 @@ Select an item — or several — to act on them. The kebab menu on a card and t
 
 ### Sharing and transferring are different
 
-**Sharing** grants access while you remain the owner — useful when colleagues need to see or edit something that is still yours to look after.
+**Sharing** grants access while you remain the owner. That suits colleagues need to see or edit something that is still yours to look after.
 
 **Transferring ownership** moves the item into someone else's space for good. Reach for it when a project genuinely changes hands, for example when you hand a piece of work over before leaving a team.
 
 :::info Who can see what
-An item shows its **audience** — private, shared with named people, shared with a team or organisation, or public. Folders and bundles can be shared with teams and the organisation.
+An item shows its **audience**: private, shared with named people, shared with a team or organisation, or public. Folders and bundles can be shared with teams and the organisation.
 :::
 
 ### Trash and restore
@@ -149,10 +149,10 @@ GOAT supports multiple file formats for upload: **GeoPackage**, **GeoJSON**, **S
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content"><strong>CSV and XLSX files only — Preview &amp; Configure step:</strong> GOAT shows a preview of your tabular data so you can verify it before import.
+  <div class="content"><strong>CSV and XLSX files only, Preview &amp; Configure step:</strong> GOAT shows a preview of your tabular data so you can verify it before import.
     <ul>
-      <li><code>Worksheet</code> — For XLSX files with multiple sheets, select which sheet to import.</li>
-      <li><code>First row is header</code> — Toggle on (default) if your file's first row contains column names. Toggle off if the first row is data — column names will be auto-generated and you can rename them later in the layer settings.</li>
+      <li><code>Worksheet</code>: for XLSX files with multiple sheets, select which sheet to import.</li>
+      <li><code>First row is header</code>: toggle on (default) if your file's first row contains column names. Toggle off if the first row is data, and column names will be auto-generated and you can rename them later in the layer settings.</li>
     </ul>
     The preview table shows the first rows of your file. Click <code>Next</code> when ready.
   </div>
@@ -162,9 +162,9 @@ GOAT supports multiple file formats for upload: **GeoPackage**, **GeoJSON**, **S
   <div class="step-number">5</div>
   <div class="content">In the <strong>Destination &amp; Metadata</strong> step, configure your dataset:
     <ul>
-      <li><strong>Destination Folder</strong> — Choose where to organize your dataset</li>
-      <li><strong>Name</strong> — Give your dataset a descriptive name</li>
-      <li><strong>Description</strong> (optional) — Add details about your dataset's content and purpose</li>
+      <li><strong>Destination Folder</strong>: choose where to organize your dataset</li>
+      <li><strong>Name</strong>: give your dataset a descriptive name</li>
+      <li><strong>Description</strong> (optional): add details about your dataset's content and purpose</li>
     </ul>
     Click <code>Next</code>.
   </div>
@@ -228,8 +228,8 @@ You can also upload datasets directly while working in the [Map](../map/layers) 
 
 When downloading a spatial dataset, a dialog lets you choose:
 
-- **Download Type** — the export file format (e.g. GeoPackage, GeoJSON, Shapefile).
-- **Coordinate Reference System (CRS)** — the CRS to reproject the data into before download. GOAT automatically suggests CRS options based on the dataset's geographic extent: global options (WGS 84, Web Mercator) are always available, plus the matching UTM zone and any relevant national or regional CRS. The default is **WGS 84 (EPSG:4326)**.
+- **Download Type**: the export file format (e.g. GeoPackage, GeoJSON, Shapefile).
+- **Coordinate Reference System (CRS)**: the CRS to reproject the data into before download. GOAT automatically suggests CRS options based on the dataset's geographic extent: global options (WGS 84, Web Mercator) are always available, plus the matching UTM zone and any relevant national or regional CRS. The default is **WGS 84 (EPSG:4326)**.
 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>

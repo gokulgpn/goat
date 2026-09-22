@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Inhalt
 
-Auf der Seite **Inhalt** liegen Ihre Projekte, Datensätze und Vorlagen. Alles, worauf Sie zugreifen können, ist in **Bereiche** gegliedert — Ihren eigenen, die Ihrer Teams und den Ihrer Organisation. Inhalte gehören damit zu einem Bereich und nicht zu einer Person, und sie bleiben dort, wenn jemand hinzukommt oder das Team verlässt.
+Auf der Seite **Inhalt** liegen Ihre Projekte, Datensätze und Vorlagen. Alles, worauf Sie zugreifen können, ist in **Bereiche** gegliedert: Ihren eigenen, die Ihrer Teams und den Ihrer Organisation. Inhalte gehören damit zu einem Bereich und nicht zu einer Person, und sie bleiben dort, wenn jemand hinzukommt oder das Team verlässt.
 
 Auf der Seite Inhalt können Sie:
 
@@ -21,15 +21,15 @@ Auf der Seite Inhalt können Sie:
 
 Die linke Leiste zeigt die Bereiche, auf die Sie zugreifen können:
 
-- **Meine Inhalte** — Ihr persönlicher Bereich. Was Sie erstellen, landet hier, sofern Sie es nicht woanders ablegen.
-- **Team-Bereiche** — einer je Team, dem Sie angehören. Alle im Team können auf die Inhalte zugreifen.
-- **Organisation** — für die gesamte Organisation freigegeben.
+- **Meine Inhalte**: Ihr persönlicher Bereich. Was Sie erstellen, landet hier, sofern Sie es nicht woanders ablegen.
+- **Team-Bereiche**: einer je Team, dem Sie angehören. Alle im Team können auf die Inhalte zugreifen.
+- **Organisation**: für die gesamte Organisation freigegeben.
 
 Darunter stehen drei Ansichten, die alle Bereiche zusammenfassen:
 
-- **Mit mir geteilt** — alles, was andere mit Ihnen geteilt haben, an einer Stelle
-- **Zuletzt bearbeitet** — was Sie zuletzt geöffnet haben, über alle erreichbaren Bereiche hinweg
-- **Papierkorb** — gelöschte Inhalte, bis sie endgültig entfernt werden
+- **Mit mir geteilt**: alles, was andere mit Ihnen geteilt haben, an einer Stelle
+- **Zuletzt bearbeitet**: was Sie zuletzt geöffnet haben, über alle erreichbaren Bereiche hinweg
+- **Papierkorb**: gelöschte Inhalte, bis sie endgültig entfernt werden
 
 Wählen Sie einen Bereich, um seine Inhalte zu sehen. Innerhalb eines Bereichs gruppieren **Ordner** die Inhalte so, wie es Ihnen passt.
 
@@ -46,7 +46,7 @@ Die Werkzeugleiste über den Inhalten bietet:
 
 ## Inhalte verwalten
 
-Wählen Sie ein Element — oder mehrere — aus, um damit zu arbeiten. Das Menü auf einer Karte und die Aktionsleiste bieten:
+Wählen Sie ein Element aus, oder mehrere, um damit zu arbeiten. Das Menü auf einer Karte und die Aktionsleiste bieten:
 
 | Aktion | Was sie bewirkt |
 |--------|-----------------|
@@ -58,17 +58,17 @@ Wählen Sie ein Element — oder mehrere — aus, um damit zu arbeiten. Das Men�
 
 ### Teilen und Übertragen sind zweierlei
 
-**Teilen** gewährt Zugriff, während Sie Besitzer bleiben — sinnvoll, wenn Kolleginnen und Kollegen etwas sehen oder bearbeiten sollen, das weiterhin in Ihrer Verantwortung liegt.
+**Teilen** gewährt Zugriff, während Sie Besitzer bleiben. Das ist sinnvoll, wenn Kolleginnen und Kollegen etwas sehen oder bearbeiten sollen, das weiterhin in Ihrer Verantwortung liegt.
 
 **Rechte übertragen** verschiebt das Element dauerhaft in den Bereich einer anderen Person. Das ist der richtige Weg, wenn ein Projekt tatsächlich den Besitzer wechselt, etwa bei einer Übergabe vor dem Wechsel aus einem Team.
 
 :::info Wer was sehen kann
-Ein Element zeigt seine **Sichtbarkeit** — privat, mit einzelnen Personen geteilt, mit einem Team oder der Organisation geteilt, oder öffentlich. Ordner und Datenpakete können mit Teams und der Organisation geteilt werden.
+Ein Element zeigt seine **Sichtbarkeit**: privat, mit einzelnen Personen geteilt, mit einem Team oder der Organisation geteilt, oder öffentlich. Ordner und Datenpakete können mit Teams und der Organisation geteilt werden.
 :::
 
 ### Papierkorb und Wiederherstellen
 
-Gelöschte Inhalte verschwinden nicht sofort: Sie landen im **Papierkorb**, aus dem der Besitzer sie **Wiederherstellen** kann. Sie bleiben dort, bis sie endgültig entfernt werden — ein versehentliches Löschen lässt sich also rückgängig machen.
+Gelöschte Inhalte verschwinden nicht sofort: Sie landen im **Papierkorb**, aus dem der Besitzer sie **Wiederherstellen** kann. Sie bleiben dort, bis sie endgültig entfernt werden. Ein versehentliches Löschen lässt sich also rückgängig machen.
 
 ## Inhalte hinzufügen
 
@@ -149,10 +149,10 @@ GOAT unterstützt mehrere Dateiformate zum Hochladen: **GeoPackage**, **GeoJSON*
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content"><strong>Nur für CSV- und XLSX-Dateien — Schritt Vorschau &amp; Konfiguration:</strong> GOAT zeigt eine Vorschau Ihrer tabellarischen Daten an, damit Sie diese vor dem Import überprüfen können.
+  <div class="content"><strong>Nur für CSV- und XLSX-Dateien, Schritt Vorschau &amp; Konfiguration:</strong> GOAT zeigt eine Vorschau Ihrer tabellarischen Daten an, damit Sie diese vor dem Import überprüfen können.
     <ul>
-      <li><code>Arbeitsblatt</code> — Bei XLSX-Dateien mit mehreren Blättern wählen Sie aus, welches Blatt importiert werden soll.</li>
-      <li><code>Erste Zeile ist Kopfzeile</code> — Aktivieren (Standard), wenn die erste Zeile Ihrer Datei Spaltennamen enthält. Deaktivieren, wenn die erste Zeile Daten enthält — Spaltennamen werden dann automatisch generiert und können später in den Layer-Einstellungen umbenannt werden.</li>
+      <li><code>Arbeitsblatt</code>: Bei XLSX-Dateien mit mehreren Blättern wählen Sie aus, welches Blatt importiert werden soll.</li>
+      <li><code>Erste Zeile ist Kopfzeile</code>: Aktivieren (Standard), wenn die erste Zeile Ihrer Datei Spaltennamen enthält. Deaktivieren, wenn die erste Zeile Daten enthält. Spaltennamen werden dann automatisch generiert und können später in den Layer-Einstellungen umbenannt werden.</li>
     </ul>
     Die Vorschau-Tabelle zeigt die ersten Zeilen Ihrer Datei. Klicken Sie auf <code>Weiter</code>, wenn Sie fertig sind.
   </div>
@@ -162,9 +162,9 @@ GOAT unterstützt mehrere Dateiformate zum Hochladen: **GeoPackage**, **GeoJSON*
   <div class="step-number">5</div>
   <div class="content">Im Schritt <strong>Ziel &amp; Metadaten</strong> konfigurieren Sie Ihren Datensatz:
     <ul>
-      <li><strong>Zielordner</strong> — Wählen Sie, wo Sie Ihren Datensatz organisieren möchten</li>
-      <li><strong>Name</strong> — Geben Sie Ihrem Datensatz einen beschreibenden Namen</li>
-      <li><strong>Beschreibung</strong> (optional) — Fügen Sie Details über den Inhalt und Zweck Ihres Datensatzes hinzu</li>
+      <li><strong>Zielordner</strong>: Wählen Sie, wo Sie Ihren Datensatz organisieren möchten</li>
+      <li><strong>Name</strong>: Geben Sie Ihrem Datensatz einen beschreibenden Namen</li>
+      <li><strong>Beschreibung</strong> (optional): Fügen Sie Details über den Inhalt und Zweck Ihres Datensatzes hinzu</li>
     </ul>
     Klicken Sie auf <code>Weiter</code>.
   </div>
@@ -228,8 +228,8 @@ Sie können Datensätze auch direkt während der Arbeit in der [Karte](../map/la
 
 Beim Herunterladen eines räumlichen Datensatzes können Sie im Dialog Folgendes auswählen:
 
-- **Download-Typ** — das Exportdateiformat (z. B. GeoPackage, GeoJSON, Shapefile).
-- **Koordinatenreferenzsystem** — das KRS, in das die Daten vor dem Download umprojiziert werden. GOAT schlägt automatisch KRS-Optionen basierend auf der geografischen Ausdehnung des Datensatzes vor: Globale Optionen (WGS 84, Web Mercator) sind immer verfügbar, zusätzlich die passende UTM-Zone sowie relevante nationale oder regionale KRS. Der Standardwert ist **WGS 84 (EPSG:4326)**.
+- **Download-Typ**: das Exportdateiformat (z. B. GeoPackage, GeoJSON, Shapefile).
+- **Koordinatenreferenzsystem**: das KRS, in das die Daten vor dem Download umprojiziert werden. GOAT schlägt automatisch KRS-Optionen basierend auf der geografischen Ausdehnung des Datensatzes vor: Globale Optionen (WGS 84, Web Mercator) sind immer verfügbar, zusätzlich die passende UTM-Zone sowie relevante nationale oder regionale KRS. Der Standardwert ist **WGS 84 (EPSG:4326)**.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/workspace/datasets/managing_datasets.png').default} alt="Datensatz-Verwaltungsoptionen" style={{ maxHeight: "300px", maxWidth: "300px"}}/>

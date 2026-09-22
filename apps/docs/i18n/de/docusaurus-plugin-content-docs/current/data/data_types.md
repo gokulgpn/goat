@@ -11,8 +11,8 @@ Jede Spalte in einem Feature-Datensatz oder einer Tabelle hat einen **Feldtyp**.
 
 GOAT trennt die **Metadaten** eines Datensatzes von den **Daten** selbst:
 
-- **Metadaten** — Name, Beschreibung, Felddefinitionen, Gestaltung und Freigabeeinstellungen des Datensatzes — liegen in einer **PostgreSQL**-Datenbank.
-- **Daten** — die Geometrien und Attributwerte — werden in **DuckLake** gespeichert, einem analytischen Speicher auf Basis von Parquet-Dateien im Objektspeicher. Dadurch kann GOAT auch große Datensätze schnell abfragen und analysieren.
+- **Metadaten**: Name, Beschreibung, Felddefinitionen, Gestaltung und Freigabeeinstellungen des Datensatzes. Diese liegen in einer **PostgreSQL**-Datenbank.
+- **Daten**: die Geometrien und Attributwerte. Sie werden in **DuckLake** gespeichert, einem analytischen Speicher auf Basis von Parquet-Dateien im Objektspeicher. Dadurch kann GOAT auch große Datensätze schnell abfragen und analysieren.
 
 Alle Geometrien werden im Koordinatenbezugssystem **EPSG:4326** gespeichert (Längen- und Breitengrad in Grad). Gemessen wird jedoch nicht in Grad: **Area**-, **Perimeter**- und **Length**-Spalten werden auf der gekrümmten Erdoberfläche berechnet, sodass ihre Werte echte Meter sind und auch über große Gebiete hinweg genau bleiben.
 
@@ -33,7 +33,7 @@ Alle Geometrien werden im Koordinatenbezugssystem **EPSG:4326** gespeichert (Lä
 
 **Text**, **Number**, **Boolean** und **Date** enthalten die Werte, die Sie eingeben oder importieren. Sie können sie jederzeit zu einem Datensatz hinzufügen, und es sind die Typen, die beim Anlegen eines neuen Datensatzes zur Verfügung stehen.
 
-Eine **Number**-Spalte lässt sich für die Anzeige formatieren. Die Formatierung ändert nur, wie der Wert in GOAT aussieht — der gespeicherte Wert bleibt unverändert, und Werkzeuge rechnen weiterhin mit der vollständigen Zahl.
+Eine **Number**-Spalte lässt sich für die Anzeige formatieren. Die Formatierung ändert nur, wie der Wert in GOAT aussieht. Der gespeicherte Wert bleibt unverändert, und Werkzeuge rechnen weiterhin mit der vollständigen Zahl.
 
 | Einstellung | Wirkung auf `1234567.891` |
 |-------------|---------------------------|
@@ -42,26 +42,26 @@ Eine **Number**-Spalte lässt sich für die Anzeige formatieren. Die Formatierun
 | **Große Zahlen abkürzen** | `1,2 Mio.` |
 | **Vorzeichen immer anzeigen** | `+1234567,891`, damit positive Werte genauso deutlich gekennzeichnet sind wie negative |
 
-Dieselben Einstellungen stehen für **Area**-, **Perimeter**- und **Length**-Spalten zur Verfügung. Dort können Sie zusätzlich die **Einheit** wählen, in der der Wert angezeigt wird — `m²`, `ha` oder `km²` für Area und `m` oder `km` für Perimeter und Length. Bei `auto` wählt GOAT eine zum Wert passende Einheit.
+Dieselben Einstellungen stehen für **Area**-, **Perimeter**- und **Length**-Spalten zur Verfügung. Dort können Sie zusätzlich die **Einheit** wählen, in der der Wert angezeigt wird: `m²`, `ha` oder `km²` für Area und `m` oder `km` für Perimeter und Length. Bei `auto` wählt GOAT eine zum Wert passende Einheit.
 
 GOAT zeigt dabei eine Live-Vorschau, sodass Sie das Ergebnis vor dem Speichern sehen.
 
 ### Spalten, die GOAT berechnet
 
-**Area**, **Perimeter**, **Length** und **Formula** sind **berechnete** Spalten: GOAT leitet ihre Werte ab und hält sie aktuell, daher lassen sie sich nicht von Hand bearbeiten. Sie werden angeboten, wenn Sie die Felder eines bestehenden Datensatzes bearbeiten — ein neuer Datensatz enthält noch keine Daten, aus denen sie berechnet werden könnten.
+**Area**, **Perimeter**, **Length** und **Formula** sind **berechnete** Spalten: GOAT leitet ihre Werte ab und hält sie aktuell, daher lassen sie sich nicht von Hand bearbeiten. Sie werden angeboten, wenn Sie die Felder eines bestehenden Datensatzes bearbeiten. Ein neuer Datensatz enthält noch keine Daten, aus denen sie berechnet werden könnten.
 
 **Formula** lässt sich zu jedem Datensatz hinzufügen. Welche Messgrößen zur Verfügung stehen, hängt von der Geometrie Ihres Datensatzes ab, denn nicht jede Form lässt sich gleich messen:
 
-- **Polygone** — Area und Perimeter
-- **Linien** — Length
-- **Punkte** — keine davon, da ein Punkt keine Ausdehnung hat
-- **Tabellen** (ohne Geometrie) — keine davon
+- **Polygone**: Area und Perimeter
+- **Linien**: Length
+- **Punkte**: keine davon, da ein Punkt keine Ausdehnung hat
+- **Tabellen** (ohne Geometrie): keine davon
 
 Eine **Formula**-Spalte wird über einen Ausdruck definiert, den Sie im Formel-Editor schreiben. GOAT berechnet sie neu, sobald sich die zugrunde liegenden Daten ändern.
 
 ## Zulässige Werte einer Spalte einschränken
 
-**Text**- und **Number**-Spalten können eine Liste **zulässiger Werte** führen. Alle, die den Datensatz bearbeiten, wählen dann aus dieser Liste, statt frei zu tippen. Das hält Kategorien einheitlich — kein `bus stop`, `Bus Stop` und `bus_stop` mehr in derselben Spalte.
+**Text**- und **Number**-Spalten können eine Liste **zulässiger Werte** führen. Alle, die den Datensatz bearbeiten, wählen dann aus dieser Liste, statt frei zu tippen. Das hält Kategorien einheitlich. Kein `bus stop`, `Bus Stop` und `bus_stop` mehr in derselben Spalte.
 
 <div class="step">
   <div class="step-number">1</div>
@@ -83,7 +83,7 @@ Eine **Formula**-Spalte wird über einen Ausdruck definiert, den Sie im Formel-E
   <div class="content">Klicken Sie auf <code>Speichern</code>.</div>
 </div>
 
-Eine leere Liste lässt beliebige Werte zu — so beginnt jede Spalte.
+Eine leere Liste lässt beliebige Werte zu. So beginnt jede Spalte.
 
 :::info Reservierte Spaltennamen
 Einige Namen verwendet GOAT intern; sie können nicht an eine Spalte vergeben werden, darunter `id`, `geometry` und `geom`. Geben Sie einen davon ein, markiert GOAT das Feld sofort und lässt das Speichern erst zu, wenn Sie den Namen ändern.
@@ -93,7 +93,7 @@ Einige Namen verwendet GOAT intern; sie können nicht an eine Spalte vergeben we
 
 GOAT kennzeichnet jede Spalte mit einem kleinen **Feldtyp-Symbol**: `A` für Text, `123` für Number und ein Symbol für die übrigen Typen. Fahren Sie mit der Maus darüber, um den Namen des Feldtyps zu sehen.
 
-Das Symbol erscheint überall dort, wo Spalten aufgelistet sind — in der Datentabelle, in der Feldliste der Layer-Einstellungen, in Spaltenfiltern und in den Feldauswahlen von Werkzeugen und Formel-Editor.
+Das Symbol erscheint überall dort, wo Spalten aufgelistet sind: in der Datentabelle, in der Feldliste der Layer-Einstellungen, in Spaltenfiltern und in den Feldauswahlen von Werkzeugen und Formel-Editor.
 
 So sehen Sie es in der Datentabelle:
 

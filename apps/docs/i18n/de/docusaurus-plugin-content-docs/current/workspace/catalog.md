@@ -16,25 +16,25 @@ Der **Daten-Katalog** ist Ihr Zugang zur Erkundung von Plan4Betters umfassender 
 
 ## Einen Datensatz finden
 
-Öffnen Sie den **Katalog** über die Seitenleiste oder aus einem Projekt heraus über `+ Layer hinzufügen`. Die Seite listet alle Datensätze des Katalogs auf. Suche, Filter und Sortierung schränken diese Liste ein, und wenn Sie den Link der Seite kopieren, teilen Sie das Ergebnis — wer ihn öffnet, sieht dieselben Datensätze wie Sie.
+Öffnen Sie den **Katalog** über die Seitenleiste oder aus einem Projekt heraus über `+ Layer hinzufügen`. Die Seite listet alle Datensätze des Katalogs auf. Suche, Filter und Sortierung schränken diese Liste ein, und wenn Sie den Link der Seite kopieren, teilen Sie das Ergebnis. Wer ihn öffnet, sieht dieselben Datensätze wie Sie.
 
 ### Suche
 
 Tippen Sie in das Suchfeld, um Titel, Beschreibung und Schlagwörter eines Datensatzes zu durchsuchen.
 
-Gesucht wird nach ganzen oder Teilwörtern, Groß- und Kleinschreibung spielt keine Rolle: `grünfläche` findet *Grünflächen*. Umgekehrt gilt das nicht — ein längeres Wort als das in den Daten findet nichts. Wählen Sie daher den kürzeren Wortstamm, wenn eine Suche leer bleibt.
+Gesucht wird nach ganzen oder Teilwörtern, Groß- und Kleinschreibung spielt keine Rolle: `grünfläche` findet *Grünflächen*. Umgekehrt gilt das nicht. Ein längeres Wort als das in den Daten findet nichts. Wählen Sie daher den kürzeren Wortstamm, wenn eine Suche leer bleibt.
 
 ### Filter
 
 Die Seitenleiste schränkt die Liste ein nach:
 
-- **Datenart** — Feature, Tabelle, Raster oder Datenpaket
-- **Geometrie** — Punkt, Linie oder Polygon
-- **Kategorie** — das Thema des Datensatzes: Environment, Landuse, Places, Transportation, People, Boundary, Basemap oder Sonstige
-- **Anbieter** — wer den Datensatz bereitstellt
-- **Lizenz** — zu welchen Bedingungen er veröffentlicht ist
-- **Sprache** — die Sprache der Metadaten
-- **Zeitraum** — ein `Von`- und `Bis`-Datum, um Daten zu einem bestimmten Zeitraum zu finden
+- **Datenart**: Feature, Tabelle, Raster oder Datenpaket
+- **Geometrie**: Punkt, Linie oder Polygon
+- **Kategorie**: das Thema des Datensatzes: Environment, Landuse, Places, Transportation, People, Boundary, Basemap oder Sonstige
+- **Anbieter**: wer den Datensatz bereitstellt
+- **Lizenz**: zu welchen Bedingungen er veröffentlicht ist
+- **Sprache**: die Sprache der Metadaten
+- **Zeitraum**: ein `Von`- und `Bis`-Datum, um Daten zu einem bestimmten Zeitraum zu finden
 
 Jede Option zeigt, wie viele Datensätze sie führen, und die Zahlen passen sich an, während Sie einschränken. Gesetzte Filter erscheinen als Chips über den Ergebnissen, sodass Sie einzelne entfernen können, ohne die Seitenleiste zu öffnen. `Zurücksetzen` entfernt alle.
 
@@ -42,9 +42,9 @@ Jede Option zeigt, wie viele Datensätze sie führen, und die Zahlen passen sich
 
 `Räumlichen Filter setzen` schränkt den Katalog auf Datensätze ein, die ein bestimmtes Gebiet abdecken. Dafür gibt es drei Wege:
 
-- **Region** — nach Land, Bundesland oder Bezirk suchen
-- **Punkt + Umkreis** — auf die Karte klicken, um einen Punkt zu setzen, dann einen Radius festlegen
-- **Polygon** — auf die Karte klicken, um die Eckpunkte eines Gebiets zu zeichnen
+- **Region**: nach Land, Bundesland oder Bezirk suchen
+- **Punkt + Umkreis**: auf die Karte klicken, um einen Punkt zu setzen, dann einen Radius festlegen
+- **Polygon**: auf die Karte klicken, um die Eckpunkte eines Gebiets zu zeichnen
 
 Die Ergebnisse werden danach sortiert, wie viel eines Datensatzes in Ihrem Gebiet liegt. Datensätze, die es am besten abdecken, stehen oben.
 
@@ -67,13 +67,13 @@ Klicken Sie auf einen Datensatz, um ihn zu öffnen. Der Reiter **Zusammenfassung
 - **Schlagwörter**, mit denen der Datengeber ihn versehen hat
 - **Datengeber**, mit Kontaktdaten, sofern vorhanden
 
-Wenn ein Datensatz Daten zum Anzeigen hat, enthält der Reiter **Daten** **Beispieldaten** seiner Zeilen sowie eine Liste der **Spalten** mit Name und Typ. Die Beispieldaten sind begrenzt — sie sind ein Blick in die Daten, nicht der vollständige Datensatz.
+Wenn ein Datensatz Daten zum Anzeigen hat, enthält der Reiter **Daten** **Beispieldaten** seiner Zeilen sowie eine Liste der **Spalten** mit Name und Typ. Die Beispieldaten sind begrenzt. Sie sind ein Blick in die Daten, nicht der vollständige Datensatz.
 
 Ein Datensatz aus mehreren Layern ist als `Datenpaket` gekennzeichnet und listet die **Layer in diesem Datenpaket**. Öffnen Sie einen davon, sehen Sie, zu welchem Datenpaket er gehört. Siehe [Datensatz-Typen](../data/dataset_types.md#datensätze-aus-mehreren-layern).
 
 ## Katalog-Daten zu einem Projekt hinzufügen
 
-Datensätze werden aus einem Projekt heraus hinzugefügt — der Dialog `+ Layer hinzufügen` ist also der Ort dafür. Die Katalog-Seite für sich dient dem Finden und Speichern von Datensätzen; ihre Schaltfläche `Zum Projekt hinzufügen` ist noch nicht aktiv.
+Datensätze werden aus einem Projekt heraus hinzugefügt, der Dialog `+ Layer hinzufügen` ist also der Ort dafür. Die Katalog-Seite für sich dient dem Finden und Speichern von Datensätzen; ihre Schaltfläche `Zum Projekt hinzufügen` ist noch nicht aktiv.
 
 
 <div class="step">
@@ -100,7 +100,7 @@ Datensätze werden aus einem Projekt heraus hinzugefügt — der Dialog `+ Layer
 Wird ein Katalog-Datensatz zum ersten Mal hinzugefügt, bereitet GOAT eine Kopie davon für Ihr Projekt vor. Der Layer zeigt währenddessen `Daten werden vorbereitet …` und steht zur Verfügung, sobald das abgeschlossen ist.
 
 :::info Katalog-Layer sind schreibgeschützt
-Ein aus dem Katalog hinzugefügter Layer ist mit `Katalog · schreibgeschützt` gekennzeichnet. Sie können ihn wie jeden anderen Layer gestalten, filtern und analysieren, seine Zeilen und Spalten lassen sich jedoch nicht bearbeiten, und er kann nicht direkt heruntergeladen werden — Lizenz und Quelle bleiben beim Anbieter.
+Ein aus dem Katalog hinzugefügter Layer ist mit `Katalog · schreibgeschützt` gekennzeichnet. Sie können ihn wie jeden anderen Layer gestalten, filtern und analysieren, seine Zeilen und Spalten lassen sich jedoch nicht bearbeiten, und er kann nicht direkt heruntergeladen werden. Lizenz und Quelle bleiben beim Anbieter.
 :::
 
 Sobald eine neuere Fassung eines Datensatzes veröffentlicht ist, zeigt ein Layer in Ihrem Projekt `Aktualisierung im Katalog verfügbar`. So entscheiden Sie selbst, wann Sie die neuen Daten übernehmen.

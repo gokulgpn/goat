@@ -74,7 +74,7 @@ Our street network represents real-world transportation infrastructure including
 
 ## Bringing your own networks
 
-The networks described above are GOAT's built-in ones, and they are used by default. You can also **import your own** — a network you maintain yourself, a region you want to analyse with your own data, or a planned network you want to test before it is built.
+The networks described above are GOAT's built-in ones, and they are used by default. You can also **import your own**: a network you maintain yourself, a region you want to analyse with your own data, or a planned network you want to test before it is built.
 
 Once imported, your network is used exactly like the built-in one: the routing and accessibility tools offer it alongside `Default (Europe)`, and you pick which one an analysis should run on.
 
@@ -92,9 +92,9 @@ overturemaps download --bbox=<your region> -f geoparquet --type=connector -o con
 zip -j overture.zip ./segment.geoparquet ./connector.geoparquet
 ```
 
-Use the same bounding box for both downloads — segments and connectors have to cover the same extent, or the network will not join up.
+Use the same bounding box for both downloads. Segments and connectors have to cover the same extent, or the network will not join up.
 
-Once imported, a street network can be **edited on the map**: draw a street and GOAT splits and joins the topology, maintains the nodes, and rebuilds the routing data from what you changed. That makes it possible to test a planned connection — a new bridge, a closed street, a cycleway — and re-run an analysis on the result.
+Once imported, a street network can be **edited on the map**: draw a street and GOAT splits and joins the topology, maintains the nodes, and rebuilds the routing data from what you changed. That makes it possible to test a planned connection, such as a new bridge, a closed street or a cycleway, and re-run an analysis on the result.
 
 ### Your own public transport network
 
@@ -102,14 +102,14 @@ Your data must be a feed following the [official GTFS specification](https://gtf
 
 **Ask us for an export.** Tell Plan4Better which region you need and we prepare a file you can upload directly. This is the quickest route if you would rather not track a feed down yourself.
 
-**Go to the source.** Transit agencies publish their own feeds, and many countries collect them nationally — in Germany, [DELFI](https://www.delfi.de/) does this for the whole country. This gives you the most current data and the clearest licensing.
+**Go to the source.** Transit agencies publish their own feeds, and many countries collect them nationally. In Germany, [DELFI](https://www.delfi.de/) does this for the whole country. This gives you the most current data and the clearest licensing.
 
 **Use an aggregator.** The [Mobility Database](https://mobilitydatabase.org/) and [transit.land](https://www.transit.land/) index feeds from operators worldwide, which is the easiest way to find one when you do not already know who publishes it.
 
 Because GOAT routes the walk to and from each stop, a public transport network has to be **linked to a street network**. You choose that network while uploading, so the street network has to exist first.
 
 :::info Outside Europe, upload a street network first
-The built-in `Default (Europe)` network covers Europe only. If your transit data is for a region outside that, import a street network for the region before importing the feed — there will otherwise be nothing to connect the stops to.
+The built-in `Default (Europe)` network covers Europe only. If your transit data is for a region outside that, import a street network for the region before importing the feed. There will otherwise be nothing to connect the stops to.
 :::
 
 Linking to your own street network is also what lets a timetable analysis account for streets you changed.
