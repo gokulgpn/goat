@@ -21,7 +21,7 @@ Auf der **Startseite** zeigt die Reihe `Mit einer Vorlage starten` die verfügba
 - Über `Alle Vorlagen` die vollständige Vorlagenübersicht öffnen, in der Sie Vorlagen **durchsuchen** und eine vor der Verwendung in der **Vorschau** ansehen können.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/getting_started/start_from_template_de.webp').default} alt="Reihe „Mit einer Vorlage starten" auf der Startseite" style={{ maxHeight: "auto", maxWidth: "100%", objectFit: "cover"}}/>
+  <img src={require('/img/getting_started/start_from_template_de.webp').default} alt="Vorlagen-Reihe auf der Startseite" style={{ maxHeight: "auto", maxWidth: "100%", objectFit: "cover"}}/>
 </div>
 
 Vorlagen von GOAT finden Sie außerdem im Tab `Vorlagen` des [Katalogs](../workspace/catalog).
