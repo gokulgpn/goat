@@ -224,6 +224,56 @@ Successfully using the workflow interface provides:
 Workflows automatically save changes as you build them. The system preserves all configurations, connections, and execution states.
 :::
 
+### Save a workflow as a template
+
+Once a workflow is set up, you can save it as a **template** so it can be reused, without repeating the setup, on other data or by other people.
+
+<div class="step">
+  <div class="step-number">1</div>
+  <div class="content">Open the workflow's <code>more options</code> menu and choose <code>Save as template…</code>.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">2</div>
+  <div class="content">Give the template a <code>Name</code> and, optionally, a <code>Description</code> and categories.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">3</div>
+  <div class="content">Choose the <code>Location</code> (a space and folder) where the template is saved. Everyone who can open that folder can use the template.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">4</div>
+  <div class="content">In the <code>Inputs</code> table, decide for each input layer whether it <strong>ships with the template</strong> or the template <strong>asks for a layer when used</strong>. A layer that ships is shared with the template so others can run it.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">5</div>
+  <div class="content">Click <code>Save</code>.</div>
+</div>
+
+:::info Update instead of duplicate
+If a template was already saved from this workflow, you can **update it from the source** with the current version instead of creating a duplicate. Because the inputs are part of the saved snapshot, use <code>Update template from source</code> to change them.
+:::
+
+### Start from a template
+
+<div class="step">
+  <div class="step-number">1</div>
+  <div class="content">In the <code>Workflows</code> panel, click <code>From template</code> to open the template browser, filtered to workflow templates.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">2</div>
+  <div class="content">Search or browse, select a template to <strong>preview</strong> it, and click <code>Use template</code>.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">3</div>
+  <div class="content">The workflow is added to your project. Where the template left an input open, pick a layer once it is in the project.</div>
+</div>
+
 ## 4. Running workflows from the Map view
 
 Workflows can also be run directly from the **Map view** without opening the workflow editor. Open the **Toolbox**, click the **Workflows** tab, and select a workflow from the list. If the workflow has [variables](variables.md#running-workflows-with-variables-from-the-map-view), a **Variables** section appears where you can set values before running.

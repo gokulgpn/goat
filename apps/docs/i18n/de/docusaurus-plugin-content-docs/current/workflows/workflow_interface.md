@@ -222,6 +222,56 @@ Die erfolgreiche Nutzung der Workflow-Benutzeroberfläche bietet:
 Workflows speichern Änderungen automatisch, während Sie sie erstellen. Das System bewahrt alle Konfigurationen, Verbindungen und Ausführungszustände auf.
 :::
 
+### Einen Workflow als Vorlage speichern
+
+Sobald ein Workflow eingerichtet ist, können Sie ihn als **Vorlage** speichern, damit er ohne erneute Einrichtung mit anderen Daten oder von anderen Personen wiederverwendet werden kann.
+
+<div class="step">
+  <div class="step-number">1</div>
+  <div class="content">Öffnen Sie das <code>Weitere Optionen</code>-Menü des Workflows und wählen Sie <code>Als Vorlage speichern…</code>.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">2</div>
+  <div class="content">Geben Sie der Vorlage einen <code>Namen</code> und optional eine <code>Beschreibung</code> sowie Kategorien.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">3</div>
+  <div class="content">Wählen Sie den <code>Speicherort</code> (einen Bereich und Ordner), an dem die Vorlage gespeichert wird. Alle, die diesen Ordner öffnen können, können die Vorlage verwenden.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">4</div>
+  <div class="content">Entscheiden Sie in der <code>Eingaben</code>-Tabelle für jeden Eingabe-Layer, ob er <strong>mit der Vorlage mitgeliefert</strong> wird oder die Vorlage <strong>bei der Verwendung nach einem Layer fragt</strong>. Ein mitgelieferter Layer wird zusammen mit der Vorlage geteilt, damit andere sie ausführen können.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">5</div>
+  <div class="content">Klicken Sie auf <code>Speichern</code>.</div>
+</div>
+
+:::info Aktualisieren statt duplizieren
+Wenn aus diesem Workflow bereits eine Vorlage gespeichert wurde, können Sie sie **aus der Quelle aktualisieren** mit der aktuellen Version, anstatt ein Duplikat zu erstellen. Da die Eingaben Teil des gespeicherten Snapshots sind, verwenden Sie <code>Vorlage aus Quelle aktualisieren</code>, um sie zu ändern.
+:::
+
+### Mit einer Vorlage starten
+
+<div class="step">
+  <div class="step-number">1</div>
+  <div class="content">Klicken Sie im <code>Workflows</code>-Panel auf <code>Aus Vorlage</code>, um die Vorlagenübersicht zu öffnen, gefiltert auf Workflow-Vorlagen.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">2</div>
+  <div class="content">Suchen oder blättern Sie, wählen Sie eine Vorlage für die <strong>Vorschau</strong> und klicken Sie auf <code>Vorlage verwenden</code>.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">3</div>
+  <div class="content">Der Workflow wird zu Ihrem Projekt hinzugefügt. Wo die Vorlage eine Eingabe offen gelassen hat, wählen Sie einen Layer, sobald er im Projekt vorhanden ist.</div>
+</div>
+
 ## 4. Workflows aus der Kartenansicht ausführen
 
 Workflows können auch direkt aus der **Kartenansicht** ausgeführt werden, ohne den Workflow-Editor zu öffnen. Öffnen Sie die **Toolbox**, klicken Sie auf den Tab **Workflows** und wählen Sie einen Workflow aus der Liste. Wenn der Workflow [Variablen](variables.md#workflows-mit-variablen-aus-der-kartenansicht-ausf%C3%BChren) enthält, erscheint ein Abschnitt **Variablen**, in dem Sie Werte vor der Ausführung festlegen können.
