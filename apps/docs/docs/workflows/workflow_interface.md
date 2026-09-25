@@ -30,7 +30,7 @@ This panel is located on the left and it is divided into two sections:
 
 #### Workflows Management
 
-- **Add Workflow**: Click <code>+ Add Workflow</code> to create new analytical pipelines
+- **New**: Click <code>+ New</code> and choose <code>From scratch</code> or <code>From template</code> to create new analytical pipelines
 
 - **Workflow List**: Manage existing workflows with options to rename, duplicate, and delete
 
@@ -148,17 +148,12 @@ Begin with simple 2-3 node workflows to understand the interface, then gradually
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content"><strong>Create New Workflow</strong>: Click <code>+ Add Workflow</code> in the left panel to create a new workflow.</div>
+  <div class="content"><strong>Create a new workflow</strong>: Click <code>+ New</code> in the left panel and choose <code>From scratch</code> to start with an empty canvas, or <code>From template</code> to start from a ready-made workflow (see <a href="#start-from-a-template">Start from a template</a>). A new workflow is added to the list with a default name.</div>
 </div>
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content"><strong>Name Your Workflow</strong>: Enter a descriptive name that reflects your analytical objective (e.g., "Urban Accessibility Analysis", "Environmental Impact Assessment").</div>
-</div>
-
-<div class="step">
-  <div class="step-number">4</div>
-  <div class="content"><strong>Add Description</strong>: Provide an optional description documenting the workflow's purpose and methodology.</div>
+  <div class="content"><strong>Rename it</strong>: Open the workflow's <code>more options</code> menu and choose <code>Rename</code> to give it a name that reflects your analytical objective (e.g. "Urban Accessibility Analysis").</div>
 </div>
 
 ### Building Your Workflow

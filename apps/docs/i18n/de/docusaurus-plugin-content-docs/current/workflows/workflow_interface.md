@@ -30,7 +30,7 @@ Dieses Panel befindet sich links und ist in zwei Bereiche unterteilt:
 
 #### Workflow-Management
 
-- **Workflow hinzufügen**: Klicken Sie auf <code>+ Workflow hinzufügen</code>, um neue analytische Pipelines zu erstellen
+- **Neu**: Klicken Sie auf <code>+ Neu</code> und wählen Sie <code>Neu erstellen</code> oder <code>Aus Vorlage</code>, um neue analytische Pipelines zu erstellen
 
 - **Workflow-Liste**: Verwalten Sie vorhandene Workflows mit Optionen zum Umbenennen, Duplizieren und Löschen
 
@@ -146,17 +146,12 @@ Beginnen Sie mit einfachen 2-3 Knoten-Workflows, um die Benutzeroberfläche zu v
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content"><strong>Erstellen Sie einen neuen Workflow</strong>: Klicken Sie auf <code>+ Workflow hinzufügen</code> im linken Panel, um einen neuen [Workflow](../further_reading/glossary.md#workflow) zu erstellen.</div>
+  <div class="content"><strong>Erstellen Sie einen neuen Workflow</strong>: Klicken Sie auf <code>+ Neu</code> im linken Panel und wählen Sie <code>Neu erstellen</code>, um mit einer leeren Leinwand zu beginnen, oder <code>Aus Vorlage</code>, um von einem fertigen Workflow zu starten (siehe <a href="#mit-einer-vorlage-starten">Mit einer Vorlage starten</a>). Ein neuer Workflow wird mit einem Standardnamen zur Liste hinzugefügt.</div>
 </div>
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content"><strong>Benennen Sie Ihren Workflow</strong>: Geben Sie einen aussagekräftigen Namen ein, der Ihr analytisches Ziel widerspiegelt (z.B. "Städtische Erreichbarkeitsanalyse", "Umweltauswirkungsbewertung").</div>
-</div>
-
-<div class="step">
-  <div class="step-number">4</div>
-  <div class="content"><strong>Beschreibung hinzufügen</strong>: Geben Sie eine optionale Beschreibung an, die den Zweck und die Methodik des Workflows dokumentiert.</div>
+  <div class="content"><strong>Benennen Sie ihn um</strong>: Öffnen Sie das <code>Weitere Optionen</code>-Menü des Workflows und wählen Sie <code>Umbenennen</code>, um ihm einen Namen zu geben, der Ihr analytisches Ziel widerspiegelt (z.B. „Städtische Erreichbarkeitsanalyse").</div>
 </div>
 
 ### Erstellen Ihres Workflows
