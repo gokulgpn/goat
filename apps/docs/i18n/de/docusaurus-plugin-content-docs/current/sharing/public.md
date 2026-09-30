@@ -37,17 +37,17 @@ Beim Veröffentlichen entsteht eine **Momentaufnahme** des Projekts: Die öffent
 
 Nun können Sie:
 
-- <code>Link kopieren</code> unter <code>Adresse</code> – <b>Teilen Sie den Direktlink</b>, damit andere die Karte im Browser öffnen können.
+- <code>Link kopieren</code> unter <code>Adresse</code>: <b>Teilen Sie den Direktlink</b>, damit andere die Karte im Browser öffnen können.
 
-- <code>Kopieren</code> neben <code>Code einbetten</code> unter <code>Einbetten</code> – <b>Betten Sie die Karte</b> als iframe in Websites oder Tools ein, die HTML und iframes unterstützen.
+- <code>Kopieren</code> neben <code>Code einbetten</code> unter <code>Einbetten</code>: <b>Betten Sie die Karte</b> als iframe in Websites oder Tools ein, die HTML und iframes unterstützen.
 
 ## Weitere Einstellungen im Tab „Öffentlich“
 
 Sobald das Projekt veröffentlicht ist, bietet der Tab <code>Öffentlich</code> außerdem diese Einstellungen:
 
-- <code>Adresse</code> – Wenn Ihre Organisation eine eigene Domain eingerichtet hat, wählen Sie hier, ob die Karte über diese Domain oder über die <code>GOAT-Standarddomain</code> bereitgestellt wird. Ohne eigene Domain zeigt dieser Abschnitt nur den Link. Eigene Domains richten Sie unter [Einstellungen](../workspace/settings) ein.
+- <code>Adresse</code>: Wenn Ihre Organisation eine eigene Domain eingerichtet hat, wählen Sie hier, ob die Karte über diese Domain oder über die <code>GOAT-Standarddomain</code> bereitgestellt wird. Ohne eigene Domain zeigt dieser Abschnitt nur den Link. Eigene Domains richten Sie unter [Einstellungen](../workspace/settings) ein.
 
-- <code>Messung</code> – Wählen Sie eine Analytics-Instanz, um Besuche der öffentlichen Seite zu messen, oder <code>Kein Tracking</code>. Hat Ihre Organisation keine Analytics-Instanz konfiguriert, weist der Tab darauf hin. Ist eine Instanz ausgewählt, legt der Schalter <code>Cookie-Einwilligungsbanner</code> fest, ob Besucher gefragt werden, bevor das Tracking startet. Wenn Sie ihn ausschalten, erscheint eine Warnung, da Tracking ohne Einwilligung in Deutschland und den meisten EU-Ländern nicht mit der DSGVO vereinbar ist.
+- <code>Messung</code>: Wählen Sie eine Analytics-Instanz, um Besuche der öffentlichen Seite zu messen, oder <code>Kein Tracking</code>. Hat Ihre Organisation keine Analytics-Instanz konfiguriert, weist der Tab darauf hin. Ist eine Instanz ausgewählt, legt der Schalter <code>Cookie-Einwilligungsbanner</code> fest, ob Besucher gefragt werden, bevor das Tracking startet. Wenn Sie ihn ausschalten, erscheint eine Warnung, da Tracking ohne Einwilligung in Deutschland und den meisten EU-Ländern nicht mit der DSGVO vereinbar ist.
 
 ## Kartenausdehnung anpassen
 

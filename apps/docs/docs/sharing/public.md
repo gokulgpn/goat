@@ -37,17 +37,17 @@ Public sharing is view-only. If you want others to **edit the map**, share it on
 
 Now you can:
 
-- <code>Copy link</code> under <code>Address</code> – <b>Share the direct link</b> so others can open the map in their browser.
+- <code>Copy link</code> under <code>Address</code>: <b>Share the direct link</b> so others can open the map in their browser.
 
-- <code>Copy</code> next to <code>Embed Code</code> under <code>Embed</code> – <b>Embed the map</b> as an iframe in websites or tools that support HTML and iframes.
+- <code>Copy</code> next to <code>Embed Code</code> under <code>Embed</code>: <b>Embed the map</b> as an iframe in websites or tools that support HTML and iframes.
 
 ## Other Settings on the Public Tab
 
 Once the project is published, the <code>Public</code> tab also offers these settings:
 
-- <code>Address</code> – If your organization has set up a custom domain, choose here whether the map is served from it or from the <code>GOAT default domain</code>. Without a custom domain, this section only shows the link. Custom domains are set up under [Settings](../workspace/settings).
+- <code>Address</code>: If your organization has set up a custom domain, choose here whether the map is served from it or from the <code>GOAT default domain</code>. Without a custom domain, this section only shows the link. Custom domains are set up under [Settings](../workspace/settings).
 
-- <code>Measurement</code> – Choose an analytics instance to measure visits to the public page, or <code>No tracking</code>. If your organization has not configured any analytics instance, the tab says so. With an instance selected, the <code>Cookie consent banner</code> switch decides whether visitors are asked before tracking starts. Turning it off shows a warning, because tracking without consent is not compliant with GDPR in Germany and most of the EU.
+- <code>Measurement</code>: Choose an analytics instance to measure visits to the public page, or <code>No tracking</code>. If your organization has not configured any analytics instance, the tab says so. With an instance selected, the <code>Cookie consent banner</code> switch decides whether visitors are asked before tracking starts. Turning it off shows a warning, because tracking without consent is not compliant with GDPR in Germany and most of the EU.
 
 ## Adjusting Map Extent
 
